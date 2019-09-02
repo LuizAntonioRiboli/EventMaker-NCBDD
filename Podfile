@@ -5,11 +5,15 @@ target 'EventMaker' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  # ignore all warnings from all pods
+  inhibit_all_warnings!
+
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
   pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
   # Pods for EventMaker
 
 end

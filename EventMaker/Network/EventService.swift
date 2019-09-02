@@ -8,23 +8,33 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestore
 
 final class EventService{
     
     static let shared = EventService()
     
-    // MARK: - Firebase Database References
-    let BASE_DB_REF = Database.database().reference()
-    let EVENTS_DB_REF = Database.database().reference().child("events")
+    // MARK: - Firebase Firestore References
+
+    let EVENTS_DB_REF = Firestore.firestore().collection("events")
     
     private init(){}
     
     func getEvent(id: String, completion: @escaping(Event?) -> Void) -> Void {
-        EVENTS_DB_REF.child(id).observeSingleEvent(of: .value, with: { snapshot in
-            let event = snapshot.value as! [String: Any]
-            print(event)
-            let eventResult = Event(eventInfo: event)
-            completion(eventResult)
-        })
+ 
+        let tasksReference = Firestore.firestore().collection("events")
+
+        tasksReference.document(id).getDocument { (snapshot, err) in
+            if let data = snapshot?.data(){
+                
+                let event = Event(eventInfo: data)
+                
+                print(data)
+                completion(event)
+                
+            }
+        }
+        
+
     }
 }
