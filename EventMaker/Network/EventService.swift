@@ -13,7 +13,7 @@ import FirebaseFirestore
 final class EventService: EventServiceProtocol{
     
     
-    
+
     static let shared = EventService()
     
     // MARK: - Firebase Firestore References
@@ -49,9 +49,25 @@ final class EventService: EventServiceProtocol{
             let data = try newEvent.asDictionary()
             eventsReference.addDocument(data: data).addSnapshotListener { (snapshot, error) in
                 
+                if let eventID = snapshot?.documentID{
+                    print("Created event \(eventID)")
+                    
+                    let userDefault = UserDefaults.standard
+                    if var array = userDefault.array(forKey: "UserEventsArray") as? [String]{
+                        array.append(eventID)
+                        userDefault.set(array, forKey: "UserEventsArray")
+                    }else{
+                        var newArray = [eventID]
+                        userDefault.set(newArray, forKey: "UserEventsArray")
+                    }
+                    
+                    if let arrayTest = userDefault.array(forKey: "UserEventsArray") as? [String]{
+                        print("User default documents array")
+                        print(arrayTest)
+                    }
                 
+                }
                 
-                print(snapshot?.documentID)
             }
             
             completion(true)
@@ -60,6 +76,27 @@ final class EventService: EventServiceProtocol{
             print(error.localizedDescription)
             completion(false)
         }
-       
+    }
+    
+    func getAllEvent(completion: @escaping ([Event]) -> Void) {
+        
+//        var events:[Event] = []
+//        let userDefault = UserDefaults.standard
+//        let semaphore = DispatchSemaphore(value: 1)
+//        DispatchQueue.global(qos: .background).async {
+//            semaphore.wait()
+//            if let array = userDefault.array(forKey: "UserEventsArray") as? [String] {
+//                let group = DispatchGroup.init()
+//                for eventID in array {
+//                    let event = getEvent(id: eventID) { (eventResult) in
+//                        
+//                    }
+//                    events.append()
+//                }
+//            }
+//        }
+//        
+//        semaphore.wait()
+        
     }
 }
