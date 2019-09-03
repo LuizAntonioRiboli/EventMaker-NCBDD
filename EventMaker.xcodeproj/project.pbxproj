@@ -14,7 +14,10 @@
 		3A5AC94F231D8FAD00CBE6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */; };
 		3A5AC952231D8FAD00CBE6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */; };
 		ACDA8BF7A272FCE9D91A6B53 /* Pods_EventMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */; };
-		F111FD1A231D93DB0021AB20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F111FD19231D93DB0021AB20 /* GoogleService-Info.plist */; };
+		F111FD1C231D9C610021AB20 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventService.swift */; };
+		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
+		F111FD25231DAB150021AB20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F111FD24231DAB150021AB20 /* GoogleService-Info.plist */; };
+		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,10 @@
 		9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
 		BBF1AF02CBDB03C3339A6E48 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
 		E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F111FD19231D93DB0021AB20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F111FD1B231D9C610021AB20 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		F111FD22231D9E6A0021AB20 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F111FD24231DAB150021AB20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +71,13 @@
 		3A5AC943231D8FAD00CBE6EB /* EventMaker */ = {
 			isa = PBXGroup;
 			children = (
-				F111FD19231D93DB0021AB20 /* GoogleService-Info.plist */,
-				3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */,
-				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
-				3A5AC948231D8FAD00CBE6EB /* Main.storyboard */,
+				F111FD21231D9E480021AB20 /* Network */,
+				F111FD1F231D9E0B0021AB20 /* Controller */,
+				F111FD1E231D9E050021AB20 /* View */,
+				F111FD20231D9E1D0021AB20 /* Support */,
+				F111FD1D231D9DFE0021AB20 /* Model */,
 				3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */,
-				3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */,
+				F111FD24231DAB150021AB20 /* GoogleService-Info.plist */,
 				3A5AC953231D8FAD00CBE6EB /* Info.plist */,
 				3A5AC94B231D8FAD00CBE6EB /* EventMaker.xcdatamodeld */,
 			);
@@ -92,6 +99,48 @@
 				9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F111FD1D231D9DFE0021AB20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F111FD22231D9E6A0021AB20 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F111FD1E231D9E050021AB20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A5AC948231D8FAD00CBE6EB /* Main.storyboard */,
+				3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F111FD1F231D9E0B0021AB20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F111FD20231D9E1D0021AB20 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F111FD21231D9E480021AB20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F111FD1B231D9C610021AB20 /* EventService.swift */,
+				F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +203,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F111FD1A231D93DB0021AB20 /* GoogleService-Info.plist in Resources */,
 				3A5AC952231D8FAD00CBE6EB /* LaunchScreen.storyboard in Resources */,
+				F111FD25231DAB150021AB20 /* GoogleService-Info.plist in Resources */,
 				3A5AC94F231D8FAD00CBE6EB /* Assets.xcassets in Resources */,
 				3A5AC94A231D8FAD00CBE6EB /* Main.storyboard in Resources */,
 			);
@@ -173,8 +222,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EventMaker/Pods-EventMaker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -182,8 +235,12 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -221,9 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
+				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
 				3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */,
+				F111FD23231D9E6A0021AB20 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

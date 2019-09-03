@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        EventService.shared.getEvent(id: "wePMWXk8drRVDjxaVUmk", completion: { data in
+            print("recebeu")
+            print(data?.address)
+        })
         // Do any additional setup after loading the view.
     }
 
