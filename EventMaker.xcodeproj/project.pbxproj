@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048FBCDE231F05D100CA4211 /* ApplicationsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */; };
 		04AD4508231EE667002F4B7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AD4507231EE667002F4B7D /* GoogleService-Info.plist */; };
+		04AD450B231EE9F9002F4B7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */; };
+		04AD450D231EEA91002F4B7D /* ParticipateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */; };
 		3A334D4C231ED52200DAC1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4B231ED52200DAC1FE /* Main.storyboard */; };
 		3A334D4F231ED58C00DAC1FE /* fake1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4E231ED58C00DAC1FE /* fake1.storyboard */; };
 		3A334D51231ED5A000DAC1FE /* fake2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D50231ED5A000DAC1FE /* fake2.storyboard */; };
@@ -24,7 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsColors.swift; sourceTree = "<group>"; };
 		04AD4507231EE667002F4B7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Network/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipateEventViewController.swift; sourceTree = "<group>"; };
 		3A334D4B231ED52200DAC1FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A334D4E231ED58C00DAC1FE /* fake1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake1.storyboard; sourceTree = "<group>"; };
 		3A334D50231ED5A000DAC1FE /* fake2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake2.storyboard; sourceTree = "<group>"; };
@@ -56,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AD4509231EE9D0002F4B7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3A334D4D231ED57500DAC1FE /* FAKES */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,7 @@
 				F111FD20231D9E1D0021AB20 /* Support */,
 				F111FD1D231D9DFE0021AB20 /* Model */,
 				3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */,
+				048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */,
 				3A5AC953231D8FAD00CBE6EB /* Info.plist */,
 				3A5AC94B231D8FAD00CBE6EB /* EventMaker.xcdatamodeld */,
 			);
@@ -128,6 +143,7 @@
 		F111FD1E231D9E050021AB20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04AD4509231EE9D0002F4B7D /* Extensions */,
 				3A334D4D231ED57500DAC1FE /* FAKES */,
 				3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */,
 				3A334D4B231ED52200DAC1FE /* Main.storyboard */,
@@ -139,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
+				04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,9 +299,12 @@
 				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
 				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
+				04AD450B231EE9F9002F4B7D /* UIViewExtension.swift in Sources */,
+				048FBCDE231F05D100CA4211 /* ApplicationsColors.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
 				3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */,
 				F111FD23231D9E6A0021AB20 /* Event.swift in Sources */,
+				04AD450D231EEA91002F4B7D /* ParticipateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
