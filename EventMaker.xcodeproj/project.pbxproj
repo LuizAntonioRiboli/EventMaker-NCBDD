@@ -19,6 +19,9 @@
 		3A5AC94F231D8FAD00CBE6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */; };
 		3A5AC952231D8FAD00CBE6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */; };
 		ACDA8BF7A272FCE9D91A6B53 /* Pods_EventMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */; };
+		BF2B867F231EEDC8006A8ED7 /* PostEventCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */; };
+		BF2B8680231EEDC8006A8ED7 /* xibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */; };
+		BF2B8681231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */; };
 		F111FD1C231D9C610021AB20 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventService.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
 		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
@@ -40,6 +43,9 @@
 		3A5AC953231D8FAD00CBE6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
 		BBF1AF02CBDB03C3339A6E48 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PostEventCreationStoryboard.storyboard; sourceTree = "<group>"; };
+		BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xibTableViewCell.xib; sourceTree = "<group>"; };
+		BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateEventStoryboard.storyboard; sourceTree = "<group>"; };
 		E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F111FD1B231D9C610021AB20 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		F111FD22231D9E6A0021AB20 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 			children = (
 				3A334D4D231ED57500DAC1FE /* FAKES */,
 				3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */,
+				BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */,
+				BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */,
+				BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */,
 				3A334D4B231ED52200DAC1FE /* Main.storyboard */,
 				260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */,
 			);
@@ -226,7 +235,10 @@
 				3A334D4C231ED52200DAC1FE /* Main.storyboard in Resources */,
 				3A334D53231ED5BA00DAC1FE /* fake3.storyboard in Resources */,
 				3A5AC952231D8FAD00CBE6EB /* LaunchScreen.storyboard in Resources */,
+				BF2B867F231EEDC8006A8ED7 /* PostEventCreationStoryboard.storyboard in Resources */,
+				BF2B8680231EEDC8006A8ED7 /* xibTableViewCell.xib in Resources */,
 				3A334D51231ED5A000DAC1FE /* fake2.storyboard in Resources */,
+				BF2B8681231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard in Resources */,
 				3A5AC94F231D8FAD00CBE6EB /* Assets.xcassets in Resources */,
 				3A334D4F231ED58C00DAC1FE /* fake1.storyboard in Resources */,
 				260F73C8231EF64C007266B3 /* DashboardStoryboard.storyboard in Resources */,
@@ -357,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -412,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -428,14 +440,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3PV92TM5K;
+				DEVELOPMENT_TEAM = 94578VT8X2;
 				INFOPLIST_FILE = EventMaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,14 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3PV92TM5K;
+				DEVELOPMENT_TEAM = 94578VT8X2;
 				INFOPLIST_FILE = EventMaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
