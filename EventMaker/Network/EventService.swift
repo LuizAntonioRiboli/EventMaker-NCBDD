@@ -80,23 +80,30 @@ final class EventService: EventServiceProtocol{
     
     func getAllEvent(completion: @escaping ([Event]) -> Void) {
         
-//        var events:[Event] = []
-//        let userDefault = UserDefaults.standard
-//        let semaphore = DispatchSemaphore(value: 1)
-//        DispatchQueue.global(qos: .background).async {
-//            semaphore.wait()
-//            if let array = userDefault.array(forKey: "UserEventsArray") as? [String] {
-//                let group = DispatchGroup.init()
-//                for eventID in array {
-//                    let event = getEvent(id: eventID) { (eventResult) in
-//                        
-//                    }
-//                    events.append()
-//                }
-//            }
-//        }
-//        
-//        semaphore.wait()
+        var events:[Event] = []
+
+        let userDefault = UserDefaults.standard
         
+        if let array = userDefault.array(forKey: "UserEventsArray") as? [String] {
+            
+            let group = DispatchGroup()
+            
+            for eventID in array {
+                
+                group.enter()
+                
+                getEvent(id: eventID) {(eventResult) in
+                    if let result = eventResult{
+                        events.append(result)
+                    }
+                    group.leave()
+                }
+            }
+            group.notify(queue: DispatchQueue.main){
+                completion(events)
+            }
+        }else {
+            completion(events)
+        }
     }
 }

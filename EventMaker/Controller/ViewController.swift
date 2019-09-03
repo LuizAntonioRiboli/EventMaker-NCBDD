@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         EventService.shared.addEvent { (done) in
             print(done)
         }
+        
+        EventService.shared.getAllEvent { (events) in
+            print("Pegou eventos")
+            print(events)
+        }
         // Do any additional setup after loading the view.
     }
 
