@@ -140,7 +140,7 @@ DEPENDENCIES:
   - Firebase/Storage
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -190,4 +190,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 845028b5986be129488e6f934c76a144c9d53dc8
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.8.0.beta.2
