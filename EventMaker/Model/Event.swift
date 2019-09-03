@@ -30,6 +30,18 @@ class Event: Codable {
     var participants: [String]?
     var price: Double?
     
+    init (address:String,creator:String,date:Double,description:String,
+          isSharedPrice: Bool,name: String,participants: [String],price: Double){
+        self.address = address
+        self.creator = creator
+        self.date = date
+        self.description = description
+        self.isSharedPrice = isSharedPrice
+        self.name = name
+        self.participants = participants
+        self.price = price
+    }
+    
     init?(eventInfo: [String: Any]) {
         
         guard let address       = eventInfo[EventKeys.address] as? String,
@@ -51,4 +63,14 @@ class Event: Codable {
         self.price = price
     }
 
+}
+
+extension Encodable {
+    func asDictionary() throws -> [String: Any] {
+        let data = try JSONEncoder().encode(self)
+        guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+            throw NSError()
+        }
+        return dictionary
+    }
 }
