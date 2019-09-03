@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Create Event View Controller-->
         <scene sceneID="mxb-Bu-Mgl">
             <objects>
-                <viewController id="DUi-xK-dGu" sceneMemberID="viewController">
+                <viewController id="DUi-xK-dGu" customClass="CreateEventViewController" customModule="EventMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M8m-wn-GKI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64v-Do-um9">
                                                 <rect key="frame" x="376" y="104" width="22" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="choosePhoto:" destination="DUi-xK-dGu" eventType="touchUpInside" id="fx8-MG-QX4"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKO-dM-hmL">
                                                 <rect key="frame" x="36" y="172" width="108" height="17"/>
@@ -57,6 +60,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="date:" destination="DUi-xK-dGu" eventType="touchUpInside" id="ZfR-tk-Ona"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUy-29-Tec">
                                                 <rect key="frame" x="36" y="244" width="31" height="17"/>
@@ -162,6 +168,9 @@
                                                         <integer key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createEventButton:" destination="DUi-xK-dGu" eventType="touchUpInside" id="8Q4-im-g6b"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,6 +206,16 @@
                         <viewLayoutGuide key="safeArea" id="bWn-WH-oqD"/>
                     </view>
                     <size key="freeformSize" width="414" height="950"/>
+                    <connections>
+                        <outlet property="creatorsNameTextField" destination="hdH-ko-DT0" id="dOg-Xw-ClP"/>
+                        <outlet property="dataTextField" destination="MrT-dU-bF7" id="NgH-sv-FkR"/>
+                        <outlet property="descriptionTextField" destination="Krv-ad-LhI" id="kuw-jJ-8hn"/>
+                        <outlet property="eventImage" destination="I5z-xb-LMa" id="rur-c2-fuO"/>
+                        <outlet property="hourTextField" destination="xCl-bB-QBX" id="zyU-Z8-FLV"/>
+                        <outlet property="localAdressTextField" destination="Fpp-tL-47C" id="6dE-B8-nxm"/>
+                        <outlet property="nameTextField" destination="XfF-c7-Fbg" id="2Od-Z0-TOF"/>
+                        <outlet property="priceTextField" destination="i94-KE-D8Q" id="Mb0-8o-uaj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rum-ov-7jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
