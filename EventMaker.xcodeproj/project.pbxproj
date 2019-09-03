@@ -13,6 +13,8 @@
 		3A334D4F231ED58C00DAC1FE /* fake1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4E231ED58C00DAC1FE /* fake1.storyboard */; };
 		3A334D51231ED5A000DAC1FE /* fake2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D50231ED5A000DAC1FE /* fake2.storyboard */; };
 		3A334D53231ED5BA00DAC1FE /* fake3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D52231ED5BA00DAC1FE /* fake3.storyboard */; };
+		3A334D5D231EFF2700DAC1FE /* EventMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */; };
+		3A334D6B231EFF3100DAC1FE /* EventMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */; };
 		3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */; };
 		3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC946231D8FAD00CBE6EB /* ViewController.swift */; };
 		3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC94B231D8FAD00CBE6EB /* EventMaker.xcdatamodeld */; };
@@ -25,15 +27,40 @@
 		F111FD1C231D9C610021AB20 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventService.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
 		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
+		FE866D5CB407593B9BD68422 /* Pods_EventMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A334D5F231EFF2700DAC1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5AC939231D8FAD00CBE6EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5AC940231D8FAD00CBE6EB;
+			remoteInfo = EventMaker;
+		};
+		3A334D6D231EFF3100DAC1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5AC939231D8FAD00CBE6EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5AC940231D8FAD00CBE6EB;
+			remoteInfo = EventMaker;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		260F73C5231EF5B4007266B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Network/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08AAAC0338539EBA32B0A502 /* Pods-EventMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMakerTests.release.xcconfig"; path = "Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests.release.xcconfig"; sourceTree = "<group>"; };
 		260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryboard.storyboard; sourceTree = "<group>"; };
 		3A334D4B231ED52200DAC1FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A334D4E231ED58C00DAC1FE /* fake1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake1.storyboard; sourceTree = "<group>"; };
 		3A334D50231ED5A000DAC1FE /* fake2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake2.storyboard; sourceTree = "<group>"; };
 		3A334D52231ED5BA00DAC1FE /* fake3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake3.storyboard; sourceTree = "<group>"; };
+		3A334D5A231EFF2700DAC1FE /* EventMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakerUITests.swift; sourceTree = "<group>"; };
+		3A334D5E231EFF2700DAC1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A334D68231EFF3100DAC1FE /* EventMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakerTests.swift; sourceTree = "<group>"; };
+		3A334D6C231EFF3100DAC1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5AC941231D8FAD00CBE6EB /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5AC946231D8FAD00CBE6EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +68,8 @@
 		3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5AC951231D8FAD00CBE6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5AC953231D8FAD00CBE6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4729243CA1F3ACA2BE2690AC /* Pods-EventMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
 		BBF1AF02CBDB03C3339A6E48 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
 		BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PostEventCreationStoryboard.storyboard; sourceTree = "<group>"; };
@@ -53,6 +82,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A334D57231EFF2700DAC1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A334D65231EFF3100DAC1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE866D5CB407593B9BD68422 /* Pods_EventMakerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5AC93E231D8FAD00CBE6EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,10 +118,30 @@
 			path = FAKES;
 			sourceTree = "<group>";
 		};
+		3A334D5B231EFF2700DAC1FE /* EventMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */,
+				3A334D5E231EFF2700DAC1FE /* Info.plist */,
+			);
+			path = EventMakerUITests;
+			sourceTree = "<group>";
+		};
+		3A334D69231EFF3100DAC1FE /* EventMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */,
+				3A334D6C231EFF3100DAC1FE /* Info.plist */,
+			);
+			path = EventMakerTests;
+			sourceTree = "<group>";
+		};
 		3A5AC938231D8FAD00CBE6EB = {
 			isa = PBXGroup;
 			children = (
 				3A5AC943231D8FAD00CBE6EB /* EventMaker */,
+				3A334D5B231EFF2700DAC1FE /* EventMakerUITests */,
+				3A334D69231EFF3100DAC1FE /* EventMakerTests */,
 				3A5AC942231D8FAD00CBE6EB /* Products */,
 				86D8388BD459840165BD25B1 /* Pods */,
 				424A4A8A3EF3D0BBB9C7F6E2 /* Frameworks */,
@@ -88,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				3A5AC941231D8FAD00CBE6EB /* EventMaker.app */,
+				3A334D5A231EFF2700DAC1FE /* EventMakerUITests.xctest */,
+				3A334D68231EFF3100DAC1FE /* EventMakerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */,
+				5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +188,8 @@
 			children = (
 				BBF1AF02CBDB03C3339A6E48 /* Pods-EventMaker.debug.xcconfig */,
 				9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */,
+				4729243CA1F3ACA2BE2690AC /* Pods-EventMakerTests.debug.xcconfig */,
+				08AAAC0338539EBA32B0A502 /* Pods-EventMakerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -175,6 +244,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A334D59231EFF2700DAC1FE /* EventMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A334D63231EFF2700DAC1FE /* Build configuration list for PBXNativeTarget "EventMakerUITests" */;
+			buildPhases = (
+				3A334D56231EFF2700DAC1FE /* Sources */,
+				3A334D57231EFF2700DAC1FE /* Frameworks */,
+				3A334D58231EFF2700DAC1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A334D60231EFF2700DAC1FE /* PBXTargetDependency */,
+			);
+			name = EventMakerUITests;
+			productName = EventMakerUITests;
+			productReference = 3A334D5A231EFF2700DAC1FE /* EventMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3A334D67231EFF3100DAC1FE /* EventMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A334D6F231EFF3100DAC1FE /* Build configuration list for PBXNativeTarget "EventMakerTests" */;
+			buildPhases = (
+				E753B439856D09D4D91A82D7 /* [CP] Check Pods Manifest.lock */,
+				3A334D64231EFF3100DAC1FE /* Sources */,
+				3A334D65231EFF3100DAC1FE /* Frameworks */,
+				3A334D66231EFF3100DAC1FE /* Resources */,
+				4E9C00AAF70E87BE1EE0D891 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A334D6E231EFF3100DAC1FE /* PBXTargetDependency */,
+			);
+			name = EventMakerTests;
+			productName = EventMakerTests;
+			productReference = 3A334D68231EFF3100DAC1FE /* EventMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3A5AC940231D8FAD00CBE6EB /* EventMaker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A5AC956231D8FAD00CBE6EB /* Build configuration list for PBXNativeTarget "EventMaker" */;
@@ -204,6 +311,14 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Raul Rodrigues";
 				TargetAttributes = {
+					3A334D59231EFF2700DAC1FE = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3A5AC940231D8FAD00CBE6EB;
+					};
+					3A334D67231EFF3100DAC1FE = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3A5AC940231D8FAD00CBE6EB;
+					};
 					3A5AC940231D8FAD00CBE6EB = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -223,11 +338,27 @@
 			projectRoot = "";
 			targets = (
 				3A5AC940231D8FAD00CBE6EB /* EventMaker */,
+				3A334D59231EFF2700DAC1FE /* EventMakerUITests */,
+				3A334D67231EFF3100DAC1FE /* EventMakerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A334D58231EFF2700DAC1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A334D66231EFF3100DAC1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5AC93F231D8FAD00CBE6EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +397,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMaker/Pods-EventMaker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4E9C00AAF70E87BE1EE0D891 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ABEF0684B28BC0BA567D4F38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,9 +436,47 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E753B439856D09D4D91A82D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventMakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A334D56231EFF2700DAC1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A334D5D231EFF2700DAC1FE /* EventMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A334D64231EFF3100DAC1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A334D6B231EFF3100DAC1FE /* EventMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5AC93D231D8FAD00CBE6EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +492,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3A334D60231EFF2700DAC1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5AC940231D8FAD00CBE6EB /* EventMaker */;
+			targetProxy = 3A334D5F231EFF2700DAC1FE /* PBXContainerItemProxy */;
+		};
+		3A334D6E231EFF3100DAC1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5AC940231D8FAD00CBE6EB /* EventMaker */;
+			targetProxy = 3A334D6D231EFF3100DAC1FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -318,6 +517,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3A334D61231EFF2700DAC1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94578VT8X2;
+				INFOPLIST_FILE = EventMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AA2019.EventMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventMaker;
+			};
+			name = Debug;
+		};
+		3A334D62231EFF2700DAC1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94578VT8X2;
+				INFOPLIST_FILE = EventMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AA2019.EventMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventMaker;
+			};
+			name = Release;
+		};
+		3A334D70231EFF3100DAC1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4729243CA1F3ACA2BE2690AC /* Pods-EventMakerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94578VT8X2;
+				INFOPLIST_FILE = EventMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AA2019.EventMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventMaker.app/EventMaker";
+			};
+			name = Debug;
+		};
+		3A334D71231EFF3100DAC1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08AAAC0338539EBA32B0A502 /* Pods-EventMakerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94578VT8X2;
+				INFOPLIST_FILE = EventMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AA2019.EventMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventMaker.app/EventMaker";
+			};
+			name = Release;
+		};
 		3A5AC954231D8FAD00CBE6EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,6 +756,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A334D63231EFF2700DAC1FE /* Build configuration list for PBXNativeTarget "EventMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A334D61231EFF2700DAC1FE /* Debug */,
+				3A334D62231EFF2700DAC1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A334D6F231EFF3100DAC1FE /* Build configuration list for PBXNativeTarget "EventMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A334D70231EFF3100DAC1FE /* Debug */,
+				3A334D71231EFF3100DAC1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A5AC93C231D8FAD00CBE6EB /* Build configuration list for PBXProject "EventMaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
