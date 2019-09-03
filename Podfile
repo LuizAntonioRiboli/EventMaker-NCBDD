@@ -14,6 +14,8 @@ target 'EventMaker' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
+  pod 'Nimble'
+  pod 'Quick'
   # Pods for EventMaker
 
 end
