@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Event {
+class Event: Codable {
 
     enum EventKeys {
         static let address = "address"
@@ -21,24 +21,24 @@ class Event {
         static let price = "price"
     }
 
-    var address: String
-    var creator: String
-    var date: Int
-    var description: String
-    var isSharedPrice: Bool
-    var name: String
-    var participants: [Int: String]
-    var price: Double
+    var address: String?
+    var creator: String?
+    var date: Double?
+    var description: String?
+    var isSharedPrice: Bool?
+    var name: String?
+    var participants: [String]?
+    var price: Double?
     
     init?(eventInfo: [String: Any]) {
         
         guard let address       = eventInfo[EventKeys.address] as? String,
               let creator       = eventInfo[EventKeys.creator] as? String,
-              let date          = eventInfo[EventKeys.date] as? Int,
+              let date          = eventInfo[EventKeys.date] as? Double,
               let description   = eventInfo[EventKeys.description] as? String,
               let isSharedPrice = eventInfo[EventKeys.isSharedPrice] as? Bool,
               let name          = eventInfo[EventKeys.name] as? String,
-              let participants  = eventInfo[EventKeys.participants] as? [Int: String],
+              let participants  = eventInfo[EventKeys.participants] as? [String],
               let price         = eventInfo[EventKeys.price] as? Double else { return nil }
         
         self.address = address

@@ -10,28 +10,32 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 
-final class EventService{
+final class EventService: EventServiceProtocol{
     
     static let shared = EventService()
     
     // MARK: - Firebase Firestore References
-
-    let EVENTS_DB_REF = Firestore.firestore().collection("events")
+    let eventsReference = Firestore.firestore().collection("events")
     
     private init(){}
     
+    //MARK: - EventServiceProtocol
     func getEvent(id: String, completion: @escaping(Event?) -> Void) -> Void {
  
-        let tasksReference = Firestore.firestore().collection("events")
-
-        tasksReference.document(id).getDocument { (snapshot, err) in
+        eventsReference.document(id).getDocument { (snapshot, err) in
+            
+            
             if let data = snapshot?.data(){
+
+                do{
+                    let jsonData = try JSONSerialization.data(withJSONObject: data, options:[])
+                    let event = try JSONDecoder().decode(Event.self, from: jsonData)
                 
-                let event = Event(eventInfo: data)
-                
-                print(data)
-                completion(event)
-                
+                    completion(event)
+                }catch{
+                    print("\(error.localizedDescription)")
+                    completion(nil)
+                }
             }
         }
         

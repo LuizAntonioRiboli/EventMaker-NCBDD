@@ -17,6 +17,7 @@
 		F111FD1C231D9C610021AB20 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventService.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
 		F111FD25231DAB150021AB20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F111FD24231DAB150021AB20 /* GoogleService-Info.plist */; };
+		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F111FD1B231D9C610021AB20 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		F111FD22231D9E6A0021AB20 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F111FD24231DAB150021AB20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				F111FD21231D9E480021AB20 /* Network */,
-				F111FD20231D9E1D0021AB20 /* Support */,
 				F111FD1F231D9E0B0021AB20 /* Controller */,
 				F111FD1E231D9E050021AB20 /* View */,
+				F111FD20231D9E1D0021AB20 /* Support */,
 				F111FD1D231D9DFE0021AB20 /* Model */,
 				3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */,
 				F111FD24231DAB150021AB20 /* GoogleService-Info.plist */,
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F111FD1B231D9C610021AB20 /* EventService.swift */,
+				F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
+				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
 				3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */,
 				F111FD23231D9E6A0021AB20 /* Event.swift in Sources */,
