@@ -12,6 +12,8 @@ import FirebaseFirestore
 
 final class EventService: EventServiceProtocol{
     
+    
+    
     static let shared = EventService()
     
     // MARK: - Firebase Firestore References
@@ -38,7 +40,26 @@ final class EventService: EventServiceProtocol{
                 }
             }
         }
+    }
+    
+    func addEvent(completion: @escaping (Bool) -> Void) {
         
-
+        let newEvent = Event(address: "Test adress", creator: "Test creator", date: 121313, description: "Test description", isSharedPrice: true, name: "Event Test", participants: [], price: 20.0)
+        do{
+            let data = try newEvent.asDictionary()
+            eventsReference.addDocument(data: data).addSnapshotListener { (snapshot, error) in
+                
+                
+                
+                print(snapshot?.documentID)
+            }
+            
+            completion(true)
+        }
+        catch{
+            print(error.localizedDescription)
+            completion(false)
+        }
+       
     }
 }

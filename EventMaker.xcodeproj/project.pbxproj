@@ -137,8 +137,8 @@
 		F111FD21231D9E480021AB20 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F111FD1B231D9C610021AB20 /* EventService.swift */,
 				F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */,
+				F111FD1B231D9C610021AB20 /* EventService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";

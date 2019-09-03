@@ -16,6 +16,11 @@ class ViewController: UIViewController {
             print("recebeu")
             print(data?.address)
         })
+        
+        
+        EventService.shared.addEvent { (done) in
+            print(done)
+        }
         // Do any additional setup after loading the view.
     }
 
