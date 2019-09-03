@@ -9,5 +9,7 @@
 import Foundation
 
 protocol EventServiceProtocol {
-    func getEvent(id: String, completion: @escaping(Event?) -> Void) -> Void 
+    func getEvent(id: String, completion: @escaping(Event?) -> Void)
+    func addEvent(completion: @escaping (Bool) -> Void) 
+    func getAllEvent(completion: @escaping([Event]) -> Void)
 }
