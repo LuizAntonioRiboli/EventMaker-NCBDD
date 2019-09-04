@@ -143,7 +143,6 @@
 		F111FD1E231D9E050021AB20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04AD4509231EE9D0002F4B7D /* Extensions */,
 				3A334D4D231ED57500DAC1FE /* FAKES */,
 				3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */,
 				3A334D4B231ED52200DAC1FE /* Main.storyboard */,
@@ -154,6 +153,7 @@
 		F111FD1F231D9E0B0021AB20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AD4509231EE9D0002F4B7D /* Extensions */,
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
 				04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */,
 			);
@@ -444,13 +444,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = 9BB2SW97R4;
 				INFOPLIST_FILE = EventMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = luiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,13 +463,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = 9BB2SW97R4;
 				INFOPLIST_FILE = EventMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = luiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

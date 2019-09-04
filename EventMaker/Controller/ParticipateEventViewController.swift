@@ -10,24 +10,24 @@ import UIKit
 
 class ParticipateEventViewController: UIViewController {
     
-    // Marker: Header
+    // Mark: Header
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var headerLabel: UILabel!
     
-    @IBOutlet weak var eventImage: UIView!
-    @IBOutlet weak var number: UILabel!
-    @IBOutlet weak var joinEventTitle: UILabel!
-    
-    
-    @IBOutlet weak var askForKeyLabel: UILabel!
-    @IBOutlet weak var keyView: UIView!
-    @IBOutlet weak var keyTextField: UITextField!
-    
-    @IBOutlet weak var nextButton: UIButton!
+    // Mark: ScrollView
+    @IBOutlet weak var scrollView: UIScrollView!
+        @IBOutlet weak var eventImage: UIView!
+        @IBOutlet weak var number: UILabel!
+        @IBOutlet weak var joinEventTitle: UILabel!
+        @IBOutlet weak var askForKeyLabel: UILabel!
+        @IBOutlet weak var keyView: UIView!
+            @IBOutlet weak var keyTextField: UITextField!
+        @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        personalizeScreen()
     }
     
     func personalizeScreen () {
@@ -37,16 +37,38 @@ class ParticipateEventViewController: UIViewController {
         self.keyView.roundCorners(radius: 9)
         self.nextButton.circlefy()
         self.nextButton.isEnabled = false
+        
+        self.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard)))
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard)))
+        
+        self.keyTextField.delegate = self
+
     }
     
-    func handleButtonActivation () {
-        if self.nextButton.isEnabled {
-           self.nextButton.isEnabled = false
-            self.nextButton.backgroundColor = ApplicationsColors.VividBlueDisabled
-        } else {
-            self.nextButton.isEnabled = true
-            self.nextButton.backgroundColor = ApplicationsColors.VividBlue
-        }
+    func handleButtonActivation (activeButton: Bool) {
+        self.nextButton.isEnabled = activeButton
+        self.nextButton.backgroundColor = activeButton ? ApplicationsColors.VividBlue : ApplicationsColors.VividBlueDisabled
+    }
+    
+    @objc func dismissKeyboard () {
+        self.view.endEditing(true)
     }
 
+    @IBAction func nextButtonAction(_ sender: Any) {
+        // perform action
+    }
+    
+}
+
+extension ParticipateEventViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        handleButtonActivation(activeButton: textField.text == "" ? false : true )
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        handleButtonActivation(activeButton: textField.text == "" ? false : true )
+    }
+    
 }
