@@ -12,14 +12,11 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet weak var dashboaardTableView: UITableView!
    
-    private let cellIdentifier = "dashboardCell"
+    private let cellIdentifier = "dashboardIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let xib = UINib(nibName: "xibTableViewCell", bundle: nil)
-
-        dashboaardTableView.register(xib, forCellReuseIdentifier: cellIdentifier)
         // Do any additional setup after loading the view.
         dashboaardTableView.delegate = self
         dashboaardTableView.dataSource = self
@@ -28,6 +25,11 @@ class DashboardViewController: UIViewController {
 }
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -36,6 +38,20 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! DashboardTableViewCell
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
+        if (section == 0){
+            return "Meus eventos"
+        }
+        if (section == 1){
+            return "Eventos cancelados"
+        }
+        return ""
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80.0
     }
     
     

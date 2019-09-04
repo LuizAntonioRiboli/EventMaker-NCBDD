@@ -12,6 +12,7 @@ class PostEventCreationViewController: UIViewController {
 
     
     @IBOutlet weak var eventCodeView: UIView!
+    @IBOutlet weak var mainView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -23,7 +23,6 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>PostEventCreationStoryboard</string>
 	<string>DashboardStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

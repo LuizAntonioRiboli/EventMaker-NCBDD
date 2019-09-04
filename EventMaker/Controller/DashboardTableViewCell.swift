@@ -9,12 +9,18 @@
 import UIKit
 
 class DashboardTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var eventImageView: UIImageView!
+    @IBOutlet weak var participatingButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        eventImageView.layer.cornerRadius = eventImageView.frame.height/2
+        participatingButton.layer.borderWidth = 1
+        participatingButton.layer.borderColor = UIColor.green.cgColor
+        participatingButton.layer.cornerRadius = participatingButton.frame.height/4
+        
         // Initialization code
     }
 
