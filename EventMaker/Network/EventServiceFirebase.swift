@@ -10,11 +10,35 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 
-final class EventService: EventServiceProtocol{
+final class EventServiceFirebase: EventServiceProtocol {
+    func addEvent(event: Event, completion: @escaping (String?) -> Void) {
+        do {
+            let data = try event.asDictionary()
+            
+            eventsReference.addDocument(data: data).addSnapshotListener { (snapshot, error) in
+                
+                if let eventID = snapshot?.documentID {
+                    let userDefault = UserDefaults.standard
+                    
+                    if var array = userDefault.array(forKey: "UserEventsArray") as? [String] {
+                        array.append(eventID)
+                        userDefault.set(array, forKey: "UserEventsArray")
+                    } else {
+                        var newArray = [eventID]
+                        userDefault.set(newArray, forKey: "UserEventsArray")
+                    }
+                    
+                    completion(eventID)
+                }
+            }
+            
+        } catch {
+            print(error.localizedDescription)
+            completion(nil)
+        }
+    }
     
-    
-
-    static let shared = EventService()
+    static let shared = EventServiceFirebase()
     
     // MARK: - Firebase Firestore References
     let eventsReference = Firestore.firestore().collection("events")
@@ -39,42 +63,6 @@ final class EventService: EventServiceProtocol{
                     completion(nil)
                 }
             }
-        }
-    }
-    
-    func addEvent(completion: @escaping (Bool) -> Void) {
-        
-        let newEvent = Event(address: "Test adress", creator: "Test creator", date: 121313, description: "Test description", isSharedPrice: true, name: "Event Test", participants: [], price: 20.0)
-        do{
-            let data = try newEvent.asDictionary()
-            eventsReference.addDocument(data: data).addSnapshotListener { (snapshot, error) in
-                
-                if let eventID = snapshot?.documentID{
-                    print("Created event \(eventID)")
-                    
-                    let userDefault = UserDefaults.standard
-                    if var array = userDefault.array(forKey: "UserEventsArray") as? [String]{
-                        array.append(eventID)
-                        userDefault.set(array, forKey: "UserEventsArray")
-                    }else{
-                        var newArray = [eventID]
-                        userDefault.set(newArray, forKey: "UserEventsArray")
-                    }
-                    
-                    if let arrayTest = userDefault.array(forKey: "UserEventsArray") as? [String]{
-                        print("User default documents array")
-                        print(arrayTest)
-                    }
-                
-                }
-                
-            }
-            
-            completion(true)
-        }
-        catch{
-            print(error.localizedDescription)
-            completion(false)
         }
     }
     
