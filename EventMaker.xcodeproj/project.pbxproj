@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402E9E32320616B001B7954 /* AskForNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402E9E22320616B001B7954 /* AskForNameViewController.swift */; };
 		048FBCDE231F05D100CA4211 /* ApplicationsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */; };
 		04AD4508231EE667002F4B7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AD4507231EE667002F4B7D /* GoogleService-Info.plist */; };
 		04AD450B231EE9F9002F4B7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0402E9E22320616B001B7954 /* AskForNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForNameViewController.swift; sourceTree = "<group>"; };
 		048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsColors.swift; sourceTree = "<group>"; };
 		04AD4507231EE667002F4B7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Network/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				04AD4509231EE9D0002F4B7D /* Extensions */,
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
 				04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */,
+				0402E9E22320616B001B7954 /* AskForNameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
 				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
+				0402E9E32320616B001B7954 /* AskForNameViewController.swift in Sources */,
 				04AD450B231EE9F9002F4B7D /* UIViewExtension.swift in Sources */,
 				048FBCDE231F05D100CA4211 /* ApplicationsColors.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
