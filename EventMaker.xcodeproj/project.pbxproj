@@ -557,7 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -576,7 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,7 +597,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -618,7 +618,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
