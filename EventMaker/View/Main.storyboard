@@ -28,20 +28,20 @@
             </objects>
             <point key="canvasLocation" x="-754" y="-261"/>
         </scene>
-        <!--fake1-->
+        <!--DashboardStoryboard-->
         <scene sceneID="foI-FR-BlZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="fake1" id="10U-cd-liD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="DashboardStoryboard" id="10U-cd-liD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Nig-cF-fDR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLb-Ma-WPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41" y="-415"/>
         </scene>
-        <!--fake2-->
+        <!--CreateEventStoryboard-->
         <scene sceneID="YT3-Uc-ycA">
             <objects>
-                <viewControllerPlaceholder storyboardName="fake2" id="yWl-mF-fqm" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CreateEventStoryboard" id="yWl-mF-fqm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7Ft-Iq-oFp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5i-Pm-ztN" userLabel="First Responder" sceneMemberID="firstResponder"/>

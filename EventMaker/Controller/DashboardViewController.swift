@@ -20,6 +20,8 @@ class DashboardViewController: UIViewController {
         // Do any additional setup after loading the view.
         dashboaardTableView.delegate = self
         dashboaardTableView.dataSource = self
+        
+        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_evento_over")
     }
 
 }

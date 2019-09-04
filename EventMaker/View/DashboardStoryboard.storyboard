@@ -123,6 +123,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D6B-Ys-4MX"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Eventos" image="ic_evento_over" id="kTc-wX-PDd"/>
                     <navigationItem key="navigationItem" title="Nome do App" id="oRc-L4-Wz1"/>
                     <connections>
                         <outlet property="dashboaardTableView" destination="bzN-Hl-GE9" id="3PV-83-bIF"/>
@@ -130,10 +131,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5g-bT-oy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75.362318840579718" y="93.75"/>
+            <point key="canvasLocation" x="836" y="-76"/>
         </scene>
     </scenes>
     <resources>
         <image name="BradMatomoImage" width="207" height="306"/>
+        <image name="ic_evento_over" width="22" height="21"/>
     </resources>
 </document>

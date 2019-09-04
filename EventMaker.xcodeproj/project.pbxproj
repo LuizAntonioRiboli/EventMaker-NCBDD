@@ -29,7 +29,6 @@
 		BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */; };
 		BF2B867F231EEDC8006A8ED7 /* PostEventCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */; };
 		BF2B8681231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */; };
-		BF9494FC232004B100A7D150 /* ViewForXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9494FB232004B100A7D150 /* ViewForXib.swift */; };
 		F111FD1C231D9C610021AB20 /* EventServiceFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventServiceFirebase.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
 		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
@@ -747,7 +746,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3PV92TM5K;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMaker/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -767,7 +766,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3PV92TM5K;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMaker/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

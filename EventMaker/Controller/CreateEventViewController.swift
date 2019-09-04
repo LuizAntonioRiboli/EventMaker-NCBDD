@@ -52,7 +52,7 @@ class CreateEventViewController: UIViewController {
         self.pickerView.toolbarDelegate = self
         
         
-        
+        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_criar_evento")
        
 
         // Do any additional setup after loading the view.
