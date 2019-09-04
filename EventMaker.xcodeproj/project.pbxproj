@@ -17,6 +17,9 @@
 		3A334D53231ED5BA00DAC1FE /* fake3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D52231ED5BA00DAC1FE /* fake3.storyboard */; };
 		3A334D5D231EFF2700DAC1FE /* EventMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */; };
 		3A334D6B231EFF3100DAC1FE /* EventMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */; };
+		3A334D73232021D500DAC1FE /* EventMakeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D72232021D500DAC1FE /* EventMakeSpec.swift */; };
+		3A334D752320298400DAC1FE /* EventDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D742320298400DAC1FE /* EventDatabase.swift */; };
+		3A334D772320326100DAC1FE /* EventServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D762320326100DAC1FE /* EventServiceTest.swift */; };
 		3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */; };
 		3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC946231D8FAD00CBE6EB /* ViewController.swift */; };
 		3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC94B231D8FAD00CBE6EB /* EventMaker.xcdatamodeld */; };
@@ -26,9 +29,12 @@
 		BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */; };
 		BF2B867F231EEDC8006A8ED7 /* PostEventCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */; };
 		BF2B8681231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */; };
-		F111FD1C231D9C610021AB20 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventService.swift */; };
+		BF9494FC232004B100A7D150 /* ViewForXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9494FB232004B100A7D150 /* ViewForXib.swift */; };
+		F111FD1C231D9C610021AB20 /* EventServiceFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventServiceFirebase.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
 		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
+		F111FD30231EFA7F0021AB20 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2F231EFA7F0021AB20 /* CreateEventViewController.swift */; };
+		F1403CF32320482E00FAEA09 /* ToolbarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1403CF22320482E00FAEA09 /* ToolbarPickerView.swift */; };
 		FE866D5CB407593B9BD68422 /* Pods_EventMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +71,9 @@
 		3A334D68231EFF3100DAC1FE /* EventMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakerTests.swift; sourceTree = "<group>"; };
 		3A334D6C231EFF3100DAC1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A334D72232021D500DAC1FE /* EventMakeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakeSpec.swift; sourceTree = "<group>"; };
+		3A334D742320298400DAC1FE /* EventDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDatabase.swift; sourceTree = "<group>"; };
+		3A334D762320326100DAC1FE /* EventServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceTest.swift; sourceTree = "<group>"; };
 		3A5AC941231D8FAD00CBE6EB /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5AC946231D8FAD00CBE6EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +88,11 @@
 		BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PostEventCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateEventStoryboard.storyboard; sourceTree = "<group>"; };
 		E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F111FD1B231D9C610021AB20 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		F111FD1B231D9C610021AB20 /* EventServiceFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceFirebase.swift; sourceTree = "<group>"; };
 		F111FD22231D9E6A0021AB20 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceProtocol.swift; sourceTree = "<group>"; };
+		F111FD2F231EFA7F0021AB20 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		F1403CF22320482E00FAEA09 /* ToolbarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +146,8 @@
 			children = (
 				3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */,
 				3A334D6C231EFF3100DAC1FE /* Info.plist */,
+				3A334D72232021D500DAC1FE /* EventMakeSpec.swift */,
+				3A334D762320326100DAC1FE /* EventServiceTest.swift */,
 			);
 			path = EventMakerTests;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 				BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */,
 				3A334D4B231ED52200DAC1FE /* Main.storyboard */,
 				260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */,
+				F1403CF22320482E00FAEA09 /* ToolbarPickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +236,7 @@
 			children = (
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
 				BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */,
+				F111FD2F231EFA7F0021AB20 /* CreateEventViewController.swift */,
 				260F73C9231F03BB007266B3 /* DashboardViewController.swift */,
 				260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */,
 			);
@@ -240,7 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */,
-				F111FD1B231D9C610021AB20 /* EventService.swift */,
+				F111FD1B231D9C610021AB20 /* EventServiceFirebase.swift */,
+				3A334D742320298400DAC1FE /* EventDatabase.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -477,6 +493,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A334D6B231EFF3100DAC1FE /* EventMakerTests.swift in Sources */,
+				3A334D73232021D500DAC1FE /* EventMakeSpec.swift in Sources */,
+				3A334D772320326100DAC1FE /* EventServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,12 +502,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
+				3A334D752320298400DAC1FE /* EventDatabase.swift in Sources */,
+				F111FD1C231D9C610021AB20 /* EventServiceFirebase.swift in Sources */,
 				260F73CA231F03BB007266B3 /* DashboardViewController.swift in Sources */,
 				260F73CC231F051B007266B3 /* DashboardTableViewCell.swift in Sources */,
+				260F73CA231F03BB007266B3 /* DashboardViewController.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
 				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
+				F111FD30231EFA7F0021AB20 /* CreateEventViewController.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
+				F1403CF32320482E00FAEA09 /* ToolbarPickerView.swift in Sources */,
 				3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */,
 				F111FD23231D9E6A0021AB20 /* Event.swift in Sources */,
 				BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */,
@@ -527,7 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,7 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,7 +589,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,7 +610,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = F229TZ6SP5;
 				INFOPLIST_FILE = EventMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
