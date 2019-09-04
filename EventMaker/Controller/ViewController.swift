@@ -9,26 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var firebase: EventDatabase?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        EventService.shared.getEvent(id: "wePMWXk8drRVDjxaVUmk", completion: { data in
+        firebase = EventDatabase(database: EventServiceFirebase.shared)
+        guard let firebase = firebase else { fatalError() }
+        
+        firebase.database.getEvent(id: "wePMWXk8drRVDjxaVUmk") { data in
             print("recebeu")
             print(data?.address)
-        })
+        }
         
         
-        EventService.shared.addEvent { (done) in
+        firebase.database.addEvent(event: Event(address: "",
+                                                creator: "",
+                                                date: 0,
+                                                description: "",
+                                                isSharedPrice: false,
+                                                name: "",
+                                                participants: [],
+                                                price: 0))
+        { (done) in
             print(done)
         }
         
-        EventService.shared.getAllEvent { (events) in
+        firebase.database.getAllEvent { (events) in
             print("Pegou eventos")
             print(events)
         }
-        // Do any additional setup after loading the view.
     }
-
-
 }
 

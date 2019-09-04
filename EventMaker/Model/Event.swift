@@ -8,7 +8,22 @@
 
 import Foundation
 
-class Event: Codable {
+class Event: Codable, Equatable {
+    static func == (lhs: Event, rhs: Event) -> Bool {
+        if  lhs.address == rhs.address &&
+            lhs.creator == rhs.creator &&
+            lhs.date == rhs.date &&
+            lhs.description == rhs.description &&
+            lhs.isSharedPrice == rhs.isSharedPrice &&
+            lhs.name == rhs.name &&
+            lhs.participants == rhs.participants &&
+            lhs.price == rhs.price {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 
     enum EventKeys {
         static let address = "address"
