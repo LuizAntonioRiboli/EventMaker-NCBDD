@@ -27,11 +27,10 @@ class CreateEventViewController: UIViewController {
     
     
     @IBAction func date(_ sender: UITextField) {
-        
-        
-        
-        
+ 
     }
+    
+    fileprivate let pickerView = ToolbarPickerView()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,13 +38,21 @@ class CreateEventViewController: UIViewController {
         datePickerView.datePickerMode = UIDatePicker.Mode.date
         datePickerView.locale = Locale(identifier: "pt_BR")
         datePickerView.addTarget(self, action: #selector(CreateEventViewController.datePickerValueChanged), for: UIControl.Event.valueChanged)
+        //dataTextField.inputView = datePickerView
         dataTextField.inputView = datePickerView
+        dataTextField.inputAccessoryView = self.pickerView.toolbar
         
         let hourPicker:UIDatePicker = UIDatePicker()
         hourPicker.locale = Locale(identifier: "pt_BR")
         hourPicker.datePickerMode = .time
         hourPicker.addTarget(self, action: #selector(CreateEventViewController.hourPickerValueChanged), for: UIControl.Event.valueChanged)
         hourTextField.inputView = hourPicker
+        hourTextField.inputAccessoryView = self.pickerView.toolbar
+        
+        self.pickerView.toolbarDelegate = self
+        
+        
+        
        
 
         // Do any additional setup after loading the view.
@@ -88,4 +95,16 @@ class CreateEventViewController: UIViewController {
     }
     */
 
+}
+
+extension CreateEventViewController: ToolbarPickerViewDelegate{
+    func didTapDone() {
+        self.view.endEditing(true)
+    }
+    
+    func didTapCancel() {
+        
+    }
+    
+    
 }
