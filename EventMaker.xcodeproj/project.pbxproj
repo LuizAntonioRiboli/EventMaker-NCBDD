@@ -21,9 +21,11 @@
 		3A5AC94F231D8FAD00CBE6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */; };
 		3A5AC952231D8FAD00CBE6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */; };
 		ACDA8BF7A272FCE9D91A6B53 /* Pods_EventMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */; };
+		BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */; };
 		BF2B867F231EEDC8006A8ED7 /* PostEventCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */; };
 		BF2B8680231EEDC8006A8ED7 /* xibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */; };
 		BF2B8681231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */; };
+		BF9494FC232004B100A7D150 /* ViewForXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9494FB232004B100A7D150 /* ViewForXib.swift */; };
 		F111FD1C231D9C610021AB20 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventService.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
 		F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD2B231DFDE10021AB20 /* EventServiceProtocol.swift */; };
@@ -72,9 +74,11 @@
 		5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
 		BBF1AF02CBDB03C3339A6E48 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEventCreationViewController.swift; sourceTree = "<group>"; };
 		BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PostEventCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xibTableViewCell.xib; sourceTree = "<group>"; };
 		BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateEventStoryboard.storyboard; sourceTree = "<group>"; };
+		BF9494FB232004B100A7D150 /* ViewForXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForXib.swift; sourceTree = "<group>"; };
 		E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F111FD1B231D9C610021AB20 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		F111FD22231D9E6A0021AB20 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -194,6 +198,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BF9494FD2320069800A7D150 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		F111FD1D231D9DFE0021AB20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,11 +217,12 @@
 		F111FD1E231D9E050021AB20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF9494FB232004B100A7D150 /* ViewForXib.swift */,
+				BF9494FD2320069800A7D150 /* Xibs */,
 				3A334D4D231ED57500DAC1FE /* FAKES */,
 				3A5AC950231D8FAD00CBE6EB /* LaunchScreen.storyboard */,
 				BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */,
 				BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */,
-				BF2B867D231EEDC8006A8ED7 /* xibTableViewCell.xib */,
 				3A334D4B231ED52200DAC1FE /* Main.storyboard */,
 				260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */,
 			);
@@ -220,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
+				BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -481,12 +495,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9494FC232004B100A7D150 /* ViewForXib.swift in Sources */,
 				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
 				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
 				3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */,
 				F111FD23231D9E6A0021AB20 /* Event.swift in Sources */,
+				BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
