@@ -129,7 +129,9 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Nimble (8.0.2)
   - Protobuf (3.9.0)
+  - Quick (2.1.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -138,6 +140,8 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Firestore
   - Firebase/Storage
+  - Nimble
+  - Quick
 
 SPEC REPOS:
   trunk:
@@ -162,7 +166,9 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - Nimble
     - Protobuf
+    - Quick
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -186,8 +192,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
-PODFILE CHECKSUM: 845028b5986be129488e6f934c76a144c9d53dc8
+PODFILE CHECKSUM: 722be6d9f143b2e13c338844296d9d27bfde2d48
 
 COCOAPODS: 1.8.0.beta.2
