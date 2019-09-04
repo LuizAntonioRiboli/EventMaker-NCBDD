@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		260F73C6231EF5B4007266B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 260F73C5231EF5B4007266B3 /* GoogleService-Info.plist */; };
 		260F73C8231EF64C007266B3 /* DashboardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */; };
+		260F73CA231F03BB007266B3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F73C9231F03BB007266B3 /* DashboardViewController.swift */; };
+		260F73CC231F051B007266B3 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */; };
 		3A334D4C231ED52200DAC1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4B231ED52200DAC1FE /* Main.storyboard */; };
 		3A334D4F231ED58C00DAC1FE /* fake1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4E231ED58C00DAC1FE /* fake1.storyboard */; };
 		3A334D51231ED5A000DAC1FE /* fake2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D50231ED5A000DAC1FE /* fake2.storyboard */; };
@@ -53,6 +55,8 @@
 		260F73C5231EF5B4007266B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Network/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		08AAAC0338539EBA32B0A502 /* Pods-EventMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMakerTests.release.xcconfig"; path = "Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests.release.xcconfig"; sourceTree = "<group>"; };
 		260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryboard.storyboard; sourceTree = "<group>"; };
+		260F73C9231F03BB007266B3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		3A334D4B231ED52200DAC1FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A334D4E231ED58C00DAC1FE /* fake1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake1.storyboard; sourceTree = "<group>"; };
 		3A334D50231ED5A000DAC1FE /* fake2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake2.storyboard; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 			children = (
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
 				BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */,
+				260F73C9231F03BB007266B3 /* DashboardViewController.swift */,
+				260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -497,6 +503,8 @@
 			files = (
 				BF9494FC232004B100A7D150 /* ViewForXib.swift in Sources */,
 				F111FD1C231D9C610021AB20 /* EventService.swift in Sources */,
+				260F73CA231F03BB007266B3 /* DashboardViewController.swift in Sources */,
+				260F73CC231F051B007266B3 /* DashboardTableViewCell.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
 				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
@@ -735,14 +743,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = L3PV92TM5K;
 				INFOPLIST_FILE = EventMaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -755,14 +763,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94578VT8X2;
+				DEVELOPMENT_TEAM = L3PV92TM5K;
 				INFOPLIST_FILE = EventMaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eventMaker1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

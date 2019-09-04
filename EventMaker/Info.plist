@@ -24,6 +24,7 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>PostEventCreationStoryboard</string>
+	<string>DashboardStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
