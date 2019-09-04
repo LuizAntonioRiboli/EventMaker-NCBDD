@@ -4,12 +4,13 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Create Event View Controller-->
+        <!--Criar-->
         <scene sceneID="mxb-Bu-Mgl">
             <objects>
                 <viewController id="DUi-xK-dGu" customClass="CreateEventViewController" customModule="EventMaker" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,6 +206,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bWn-WH-oqD"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Criar" image="ic_criar_evento" id="tsx-So-XCL"/>
                     <size key="freeformSize" width="414" height="950"/>
                     <connections>
                         <outlet property="creatorsNameTextField" destination="hdH-ko-DT0" id="dOg-Xw-ClP"/>
@@ -219,7 +221,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rum-ov-7jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266.66666666666669" y="-360.26785714285711"/>
+            <point key="canvasLocation" x="1176.8115942028987" y="-360.26785714285711"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_criar_evento" width="22" height="22"/>
+    </resources>
 </document>
