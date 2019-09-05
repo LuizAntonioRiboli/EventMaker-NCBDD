@@ -13,6 +13,7 @@ class Event: Codable, Equatable {
         if  lhs.address == rhs.address &&
             lhs.creator == rhs.creator &&
             lhs.date == rhs.date &&
+            lhs.hour == rhs.hour &&
             lhs.description == rhs.description &&
             lhs.isSharedPrice == rhs.isSharedPrice &&
             lhs.name == rhs.name &&
@@ -29,6 +30,7 @@ class Event: Codable, Equatable {
         static let address = "address"
         static let creator = "creator"
         static let date = "date"
+        static let hour = "hour"
         static let description = "description"
         static let isSharedPrice = "isSharedPrice"
         static let name = "name"
@@ -38,18 +40,20 @@ class Event: Codable, Equatable {
 
     var address: String?
     var creator: String?
-    var date: Double?
+    var date: String?
+    var hour: String?
     var description: String?
     var isSharedPrice: Bool?
     var name: String?
     var participants: [String]?
     var price: Double?
     
-    init (address:String,creator:String,date:Double,description:String,
-          isSharedPrice: Bool,name: String,participants: [String],price: Double){
+    init (address:String?,creator:String?,date:String?,hour:String?,description:String?,
+          isSharedPrice: Bool?,name: String?,participants: [String]?,price: Double?){
         self.address = address
         self.creator = creator
         self.date = date
+        self.hour = hour
         self.description = description
         self.isSharedPrice = isSharedPrice
         self.name = name
@@ -61,21 +65,23 @@ class Event: Codable, Equatable {
         
         guard let address       = eventInfo[EventKeys.address] as? String,
               let creator       = eventInfo[EventKeys.creator] as? String,
-              let date          = eventInfo[EventKeys.date] as? Double,
+              let date          = eventInfo[EventKeys.date] as? String,
+              let hour          = eventInfo[EventKeys.hour] as? String,
               let description   = eventInfo[EventKeys.description] as? String,
               let isSharedPrice = eventInfo[EventKeys.isSharedPrice] as? Bool,
               let name          = eventInfo[EventKeys.name] as? String,
               let participants  = eventInfo[EventKeys.participants] as? [String],
               let price         = eventInfo[EventKeys.price] as? Double else { return nil }
         
-        self.address = address
-        self.creator = creator
-        self.date = date
-        self.description = description
-        self.isSharedPrice = isSharedPrice
-        self.name = name
-        self.participants = participants
-        self.price = price
+        self.address        = address
+        self.creator        = creator
+        self.date           = date
+        self.hour           = hour
+        self.description    = description
+        self.isSharedPrice  = isSharedPrice
+        self.name           = name
+        self.participants   = participants
+        self.price          = price
     }
 
 }
