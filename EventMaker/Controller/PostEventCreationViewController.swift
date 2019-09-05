@@ -18,12 +18,23 @@ class PostEventCreationViewController: UIViewController {
     
     @IBOutlet weak var sharedCodeButton: UIButton!
     
+    @IBOutlet weak var eventNameLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    
+    
     
     @IBAction func shareCodeAction(_ sender: UIButton) {
         UIPasteboard.general.string = codeLabel.text
     
     }
     
+    
+    var eventName: String?
+    var date: String?
+
+    var event: Event?
     
     var eventID: String?
     
@@ -40,7 +51,11 @@ class PostEventCreationViewController: UIViewController {
         
         codeLabel.text = eventID
         
+        eventNameLabel.text = event?.name
         
+        let date = event?.date ?? "vazio"
+        let hour = event?.hour ?? "vazio"
+        dateLabel.text = date + " - " + hour
     }
     
 
