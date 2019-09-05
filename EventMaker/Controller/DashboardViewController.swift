@@ -13,6 +13,8 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var dashboaardTableView: UITableView!
    
     private let cellIdentifier = "dashboardIdentifier"
+    private var myEvents:[Event] = []
+    private var firebase: EventDatabase?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,23 +23,46 @@ class DashboardViewController: UIViewController {
         dashboaardTableView.delegate = self
         dashboaardTableView.dataSource = self
         
+        firebase = EventDatabase(database: EventServiceFirebase.shared)
+        
         tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_evento_over")
+        
+        firebase?.database.getAllEvent(completion: { [weak self] events in
+            self?.myEvents = events
+            
+            print(events)
+            self?.dashboaardTableView.reloadData()
+        })
     }
-
 }
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        
+        if section == 0{
+            return myEvents.count
+        }else{
+            return 0
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! DashboardTableViewCell
+        cell.eventNameLabel.text = myEvents[indexPath.row].name
+        
+        let data = myEvents[indexPath.row].date ?? ""
+        let hora = myEvents[indexPath.row].hour ?? ""
+        
+        let formattedDate = "\(data) - \(hora)"
+        
+        cell.dateLabel.text = formattedDate
+        
         
         return cell
     }

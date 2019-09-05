@@ -48,18 +48,30 @@ final class EventServiceFirebase: EventServiceProtocol {
     //MARK: - EventServiceProtocol
     func getEvent(id: String, completion: @escaping(Event?) -> Void) -> Void {
  
+        
+        print("getEvent \(id)")
         eventsReference.document(id).getDocument { (snapshot, err) in
             
             
-            if let data = snapshot?.data(){
-
-                do{
-                    let jsonData = try JSONSerialization.data(withJSONObject: data, options:[])
-                    let event = try JSONDecoder().decode(Event.self, from: jsonData)
+            if err != nil{
+                completion(nil)
+                return
+            }else{
                 
-                    completion(event)
-                }catch{
-                    print("\(error.localizedDescription)")
+                if let data = snapshot?.data(){
+                    
+                    do{
+                        let jsonData = try JSONSerialization.data(withJSONObject: data, options:[])
+                        let event = try JSONDecoder().decode(Event.self, from: jsonData)
+                        
+                        completion(event)
+                    }catch{
+                        print("\(error.localizedDescription)")
+                        completion(nil)
+                    }
+                }
+                else{
+                    print("no data")
                     completion(nil)
                 }
             }
@@ -74,20 +86,28 @@ final class EventServiceFirebase: EventServiceProtocol {
         
         if let array = userDefault.array(forKey: "UserEventsArray") as? [String] {
             
+            print(array)
+            
             let group = DispatchGroup()
             
             for eventID in array {
                 
+                print("Entrou grupo")
                 group.enter()
                 
                 getEvent(id: eventID) {(eventResult) in
+                    print("events: \(eventResult)")
+                    print(eventResult?.name)
                     if let result = eventResult{
                         events.append(result)
                     }
+                    print("saindo grupo")
+                    print(events)
                     group.leave()
                 }
             }
             group.notify(queue: DispatchQueue.main){
+                print(events)
                 completion(events)
             }
         }else {
