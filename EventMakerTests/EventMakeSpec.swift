@@ -22,7 +22,7 @@ class EventMakeSpec: QuickSpec {
         
         describe("Tendo que eu ainda não o evento") {
             context("quando eu criar o evento") {
-                it("entao o evento deve estar do database") {
+                it("entao o evento deve estar do database.") {
                     let event = Event(address: "",
                                       creator: "",
                                       date: 0,
@@ -39,6 +39,18 @@ class EventMakeSpec: QuickSpec {
                 }
             }
         }
+        
+        describe("Tendo que eu já tenha criado o evento X") {
+            context("quando eu requisitar o evento X do servidor") {
+                it("entao o evento deve ser retornado na requisição.") {
+                    events.database.getEvent(id: "wePMWXk8drRVDjxaVUmk") { (event) in
+                        expect(event).toNot(beNil())
+                    }
+                }
+            }
+        }
+        
+        
         
         
     }
