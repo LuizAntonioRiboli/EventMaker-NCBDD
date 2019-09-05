@@ -39,6 +39,8 @@ class CreateEventViewController: UIViewController {
     private var firebase: EventDatabase?
     var currentTappedTextField : UITextField?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.delegate = self
@@ -93,9 +95,10 @@ class CreateEventViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextView = segue.destination as? PostEventCreationViewController,
-            let eventID = sender as? String{
+            let eventMain = sender as? SenderStructure {
             
-            nextView.eventID = eventID
+            nextView.eventID = eventMain.eventID
+            nextView.event = eventMain.event
         }
     }
     
@@ -169,7 +172,8 @@ class CreateEventViewController: UIViewController {
         
         firebase?.database.addEvent(event: event, completion: { [weak self] eventID in
             
-            self?.performSegue(withIdentifier: "presentPostEventSegue", sender: eventID)
+            let senderStructure = SenderStructure(eventID: eventID, event: event)
+            self?.performSegue(withIdentifier: "presentPostEventSegue", sender: senderStructure )
 
         })
         

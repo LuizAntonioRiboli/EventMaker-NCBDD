@@ -156,7 +156,9 @@
                     </view>
                     <connections>
                         <outlet property="codeLabel" destination="5lo-2F-tF6" id="cTz-vy-KN8"/>
+                        <outlet property="dateLabel" destination="nyE-Jj-l0V" id="KJU-a7-PGj"/>
                         <outlet property="eventCodeView" destination="Sbp-Sx-lxB" id="JTr-Or-xcy"/>
+                        <outlet property="eventNameLabel" destination="5Tw-9O-gyv" id="Qah-Mi-Ngr"/>
                         <outlet property="mainView" destination="egM-e2-ede" id="80E-Cg-ifQ"/>
                         <outlet property="sharedCodeButton" destination="zGL-BI-PHx" id="5zM-Y1-PxS"/>
                     </connections>
