@@ -16,12 +16,13 @@ class CreateEventViewController: UIViewController {
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var creatorsNameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextView!
-    
     @IBOutlet weak var hourTextField: UITextField!
     @IBAction func choosePhoto(_ sender: UIButton) {
     }
     
     @IBAction func createEventButton(_ sender: UIButton) {
+        
+        saveEvent()
     }
     @IBOutlet weak var dataTextField: UITextField!
     
@@ -31,6 +32,8 @@ class CreateEventViewController: UIViewController {
     }
     
     fileprivate let pickerView = ToolbarPickerView()
+    private var firebase: EventDatabase?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +53,9 @@ class CreateEventViewController: UIViewController {
         hourTextField.inputAccessoryView = self.pickerView.toolbar
         
         self.pickerView.toolbarDelegate = self
+        
+      
+        firebase = EventDatabase(database: EventServiceFirebase.shared)
         
         
         tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_criar_evento")
@@ -81,6 +87,35 @@ class CreateEventViewController: UIViewController {
             let minute = comp.minute else {return}
       
         hourTextField.text = "\(hour):\(minute)"
+        
+    }
+    
+    func saveEvent(){
+        
+        let adress = localAdressTextField.text ?? "N/I"
+        let creator = creatorsNameTextField.text ?? "N/I"
+        let name = nameTextField.text ?? "N/I"
+        let date = dataTextField.text ?? "N/I"
+        let hour = hourTextField.text ?? "N/I"
+        let description = descriptionTextField.text ?? "N/I"
+        let price = priceTextField.text ?? "0.0"
+        
+    
+        let event = Event(address: adress,
+                          creator: creator,
+                          date: date,
+                          hour: hour,
+                          description: description,
+                          isSharedPrice: true,
+                          name: name,
+                          participants:[],
+                          price: Double(price))
+        
+        
+        firebase?.database.addEvent(event: event, completion: { eventID in
+            
+            print("Inserted id \(eventID)")
+        })
         
     }
 

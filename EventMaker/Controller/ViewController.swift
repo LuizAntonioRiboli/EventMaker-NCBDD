@@ -22,22 +22,7 @@ class ViewController: UIViewController {
         }
         
         
-        firebase.database.addEvent(event: Event(address: "",
-                                                creator: "",
-                                                date: 0,
-                                                description: "",
-                                                isSharedPrice: false,
-                                                name: "",
-                                                participants: [],
-                                                price: 0))
-        { (done) in
-            print(done)
-        }
-        
-        firebase.database.getAllEvent { (events) in
-            print("Pegou eventos")
-            print(events)
-        }
+       
     }
 }
 
