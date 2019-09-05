@@ -100,19 +100,25 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGL-BI-PHx">
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGL-BI-PHx">
                                         <rect key="frame" x="293" y="53" width="39" height="34"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="E1g-Db-9cf"/>
                                             <constraint firstAttribute="width" constant="39" id="kM1-kp-s00"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Copy"/>
+                                        <state key="normal" backgroundImage="ic_copy">
+                                            <color key="titleColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shareCodeAction:" destination="EZQ-Mn-gwP" eventType="touchUpInside" id="SCu-Pu-VUa"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COD123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lo-2F-tF6">
-                                        <rect key="frame" x="94" y="47" width="157" height="49"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uK5KH12CWEOgXGNsIbSp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lo-2F-tF6">
+                                        <rect key="frame" x="23" y="58" width="250" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="Q2o-TH-k5z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <color key="textColor" red="0.23660594938979418" green="0.10674460747102646" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -121,12 +127,14 @@
                                 <constraints>
                                     <constraint firstItem="UBw-GU-oGj" firstAttribute="top" secondItem="Sbp-Sx-lxB" secondAttribute="top" constant="26" id="1J6-Vt-dwi"/>
                                     <constraint firstAttribute="trailing" secondItem="zGL-BI-PHx" secondAttribute="trailing" constant="18" id="1Mu-Fn-VeO"/>
+                                    <constraint firstItem="5lo-2F-tF6" firstAttribute="leading" secondItem="Sbp-Sx-lxB" secondAttribute="leading" constant="23" id="EX2-lX-8A7"/>
+                                    <constraint firstItem="zGL-BI-PHx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="5lo-2F-tF6" secondAttribute="trailing" constant="20" id="H7r-O4-mj4"/>
                                     <constraint firstAttribute="height" constant="128" id="UMz-KA-F9q"/>
-                                    <constraint firstItem="5lo-2F-tF6" firstAttribute="top" secondItem="UBw-GU-oGj" secondAttribute="bottom" constant="5" id="eFx-lb-alk"/>
                                     <constraint firstItem="zGL-BI-PHx" firstAttribute="top" secondItem="Sbp-Sx-lxB" secondAttribute="top" constant="53" id="gws-Sb-ARc"/>
                                     <constraint firstAttribute="width" constant="350" id="joH-lS-ch2"/>
-                                    <constraint firstItem="5lo-2F-tF6" firstAttribute="leading" secondItem="Sbp-Sx-lxB" secondAttribute="leading" constant="94" id="kYK-Q8-aea"/>
                                     <constraint firstItem="UBw-GU-oGj" firstAttribute="leading" secondItem="Sbp-Sx-lxB" secondAttribute="leading" constant="96" id="oxo-O7-zGu"/>
+                                    <constraint firstAttribute="bottom" secondItem="5lo-2F-tF6" secondAttribute="bottom" constant="46" id="po3-JV-pkJ"/>
+                                    <constraint firstItem="5lo-2F-tF6" firstAttribute="top" secondItem="UBw-GU-oGj" secondAttribute="bottom" constant="16" id="q2c-9E-arz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -147,8 +155,10 @@
                         <viewLayoutGuide key="safeArea" id="pNh-Rn-gud"/>
                     </view>
                     <connections>
+                        <outlet property="codeLabel" destination="5lo-2F-tF6" id="cTz-vy-KN8"/>
                         <outlet property="eventCodeView" destination="Sbp-Sx-lxB" id="JTr-Or-xcy"/>
                         <outlet property="mainView" destination="egM-e2-ede" id="80E-Cg-ifQ"/>
+                        <outlet property="sharedCodeButton" destination="zGL-BI-PHx" id="5zM-Y1-PxS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOC-a2-u4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,5 +168,6 @@
     </scenes>
     <resources>
         <image name="BradMatomoImage" width="207" height="306"/>
+        <image name="ic_copy" width="20" height="21.5"/>
     </resources>
 </document>

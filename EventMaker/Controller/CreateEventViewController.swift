@@ -23,6 +23,8 @@ class CreateEventViewController: UIViewController {
     @IBAction func createEventButton(_ sender: UIButton) {
         
         saveEvent()
+        
+        
     }
     @IBOutlet weak var dataTextField: UITextField!
     
@@ -33,9 +35,17 @@ class CreateEventViewController: UIViewController {
     
     fileprivate let pickerView = ToolbarPickerView()
     private var firebase: EventDatabase?
+    var currentTappedTextField : UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.delegate = self
+        localAdressTextField.delegate = self
+        priceTextField.delegate = self
+        creatorsNameTextField.delegate = self
+        hourTextField.delegate = self
+       
+        
         
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.datePickerMode = UIDatePicker.Mode.date
@@ -61,9 +71,39 @@ class CreateEventViewController: UIViewController {
         tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_criar_evento")
        
 
+       
+
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextView = segue.destination as? PostEventCreationViewController,
+            let eventID = sender as? String{
+            
+            nextView.eventID = eventID
+        }
+    }
+    
+    
+    
+//    @objc func keyboardWillShow(notification: NSNotification) {
+//
+//        if(currentTappedTextField == descriptionTextField){
+//            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//                if self.view.frame.origin.y == 0 {
+//                    self.view.frame.origin.y -= keyboardSize.height
+//                }
+//            }
+//        }
+//
+//
+//    }
+//
+//    @objc func keyboardWillHide(notification: NSNotification) {
+//        if self.view.frame.origin.y != 0 {
+//            self.view.frame.origin.y = 0
+//        }
+//    }
     @objc func datePickerValueChanged(sender:UIDatePicker) {
         
         let dateFormatter = DateFormatter()
@@ -112,23 +152,13 @@ class CreateEventViewController: UIViewController {
                           price: Double(price))
         
         
-        firebase?.database.addEvent(event: event, completion: { eventID in
+        firebase?.database.addEvent(event: event, completion: { [weak self] eventID in
             
-            print("Inserted id \(eventID)")
+            self?.performSegue(withIdentifier: "presentPostEventSegue", sender: eventID)
+
         })
         
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -143,3 +173,11 @@ extension CreateEventViewController: ToolbarPickerViewDelegate{
     
     
 }
+
+extension CreateEventViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+}
+

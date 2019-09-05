@@ -14,6 +14,19 @@ class PostEventCreationViewController: UIViewController {
     @IBOutlet weak var eventCodeView: UIView!
     @IBOutlet weak var mainView: UIView!
     
+    @IBOutlet weak var codeLabel: UILabel!
+    
+    @IBOutlet weak var sharedCodeButton: UIButton!
+    
+    
+    @IBAction func shareCodeAction(_ sender: UIButton) {
+        UIPasteboard.general.string = codeLabel.text
+    
+    }
+    
+    
+    var eventID: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +37,9 @@ class PostEventCreationViewController: UIViewController {
         eventCodeView.layer.shadowOpacity = 1
         eventCodeView.layer.shadowOffset = CGSize(width: 0, height: 2.3)
         eventCodeView.layer.shadowRadius = 3
+        
+        codeLabel.text = eventID
+        
         
     }
     
