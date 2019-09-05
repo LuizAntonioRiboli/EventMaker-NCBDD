@@ -25,7 +25,8 @@ class EventMakeSpec: QuickSpec {
                 it("entao o evento deve estar do database.") {
                     let event = Event(address: "",
                                       creator: "",
-                                      date: 0,
+                                      date: "",
+                                      hour: "",
                                       description: "",
                                       isSharedPrice: false,
                                       name: "",

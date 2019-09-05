@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Event: Codable, Equatable {
+class Event: Equatable, Codable  {
     static func == (lhs: Event, rhs: Event) -> Bool {
         if  lhs.address == rhs.address &&
             lhs.creator == rhs.creator &&

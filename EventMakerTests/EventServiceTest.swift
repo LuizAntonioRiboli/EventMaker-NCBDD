@@ -18,7 +18,8 @@ final class EventServiceTest: EventServiceProtocol {
         events = [:]
         events.updateValue(Event(address: "Rua Carazinho 90",
                                  creator: "Marco de Vargas",
-                                 date: 45355344,
+                                 date: "6 de setembro de 2020",
+                                 hour: "25:61:61",
                                  description: "O churras vai ser na churrascaria mais cara de porto ",
                                  isSharedPrice: true,
                                  name: "Churrasco",
@@ -27,7 +28,8 @@ final class EventServiceTest: EventServiceProtocol {
         
         events.updateValue(Event(address: "Rua dos Bobos 0",
                                  creator: "Vinicius de Moraes",
-                                 date: 45355344  *  2,
+                                 date: "12 de julho de 2020",
+                                 hour: "24:61:61",
                                  description: "Não entrar, não dormir na rede, não fazer pipi",
                                  isSharedPrice: false,
                                  name: "Ir para A Casa",
