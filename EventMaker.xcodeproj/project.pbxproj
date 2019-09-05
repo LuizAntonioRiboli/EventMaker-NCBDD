@@ -11,6 +11,10 @@
 		260F73C8231EF64C007266B3 /* DashboardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */; };
 		260F73CA231F03BB007266B3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F73C9231F03BB007266B3 /* DashboardViewController.swift */; };
 		260F73CC231F051B007266B3 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */; };
+		0402E9E32320616B001B7954 /* AskForNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402E9E22320616B001B7954 /* AskForNameViewController.swift */; };
+		048FBCDE231F05D100CA4211 /* ApplicationsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */; };
+		04AD450D231EEA91002F4B7D /* ParticipateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */; };
+		04AD450B231EE9F9002F4B7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */; };
 		3A334D4C231ED52200DAC1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4B231ED52200DAC1FE /* Main.storyboard */; };
 		3A334D4F231ED58C00DAC1FE /* fake1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D4E231ED58C00DAC1FE /* fake1.storyboard */; };
 		3A334D51231ED5A000DAC1FE /* fake2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D50231ED5A000DAC1FE /* fake2.storyboard */; };
@@ -60,6 +64,10 @@
 		260F73C7231EF64C007266B3 /* DashboardStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryboard.storyboard; sourceTree = "<group>"; };
 		260F73C9231F03BB007266B3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		0402E9E22320616B001B7954 /* AskForNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForNameViewController.swift; sourceTree = "<group>"; };
+		048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsColors.swift; sourceTree = "<group>"; };
+		04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipateEventViewController.swift; sourceTree = "<group>"; };
 		3A334D4B231ED52200DAC1FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A334D4E231ED58C00DAC1FE /* fake1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake1.storyboard; sourceTree = "<group>"; };
 		3A334D50231ED5A000DAC1FE /* fake2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = fake2.storyboard; sourceTree = "<group>"; };
@@ -121,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AD4509231EE9D0002F4B7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04AD450A231EE9F9002F4B7D /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3A334D4D231ED57500DAC1FE /* FAKES */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +199,8 @@
 				F111FD20231D9E1D0021AB20 /* Support */,
 				F111FD1D231D9DFE0021AB20 /* Model */,
 				3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */,
+				048FBCDD231F05D100CA4211 /* ApplicationsColors.swift */,
+				3A5AC953231D8FAD00CBE6EB /* Info.plist */,
 				3A5AC94B231D8FAD00CBE6EB /* EventMaker.xcdatamodeld */,
 			);
 			path = EventMaker;
@@ -233,11 +251,14 @@
 		F111FD1F231D9E0B0021AB20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AD4509231EE9D0002F4B7D /* Extensions */,
 				3A5AC946231D8FAD00CBE6EB /* ViewController.swift */,
 				BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */,
 				F111FD2F231EFA7F0021AB20 /* CreateEventViewController.swift */,
 				260F73C9231F03BB007266B3 /* DashboardViewController.swift */,
 				260F73CB231F051B007266B3 /* DashboardTableViewCell.swift */,
+				04AD450C231EEA91002F4B7D /* ParticipateEventViewController.swift */,
+				0402E9E22320616B001B7954 /* AskForNameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -508,11 +529,15 @@
 				260F73CA231F03BB007266B3 /* DashboardViewController.swift in Sources */,
 				3A5AC947231D8FAD00CBE6EB /* ViewController.swift in Sources */,
 				F111FD2C231DFDE10021AB20 /* EventServiceProtocol.swift in Sources */,
+				0402E9E32320616B001B7954 /* AskForNameViewController.swift in Sources */,
+				04AD450B231EE9F9002F4B7D /* UIViewExtension.swift in Sources */,
+				048FBCDE231F05D100CA4211 /* ApplicationsColors.swift in Sources */,
 				F111FD30231EFA7F0021AB20 /* CreateEventViewController.swift in Sources */,
 				3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */,
 				F1403CF32320482E00FAEA09 /* ToolbarPickerView.swift in Sources */,
 				3A5AC94D231D8FAD00CBE6EB /* EventMaker.xcdatamodeld in Sources */,
 				F111FD23231D9E6A0021AB20 /* Event.swift in Sources */,
+				04AD450D231EEA91002F4B7D /* ParticipateEventViewController.swift in Sources */,
 				BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
