@@ -13,18 +13,20 @@ class CreateEventViewController: UIViewController {
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var localAdressTextField: UITextField!
+    
+    @IBOutlet weak var priceDistributionTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var creatorsNameTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    
+    
     @IBOutlet weak var hourTextField: UITextField!
     @IBAction func choosePhoto(_ sender: UIButton) {
     }
     
     @IBAction func createEventButton(_ sender: UIButton) {
-        
         saveEvent()
-        
-        
     }
     @IBOutlet weak var dataTextField: UITextField!
     
@@ -44,7 +46,9 @@ class CreateEventViewController: UIViewController {
         priceTextField.delegate = self
         creatorsNameTextField.delegate = self
         hourTextField.delegate = self
-       
+        priceDistributionTextField.delegate = self
+        
+        descriptionTextView.delegate = self
         
         
         let datePickerView:UIDatePicker = UIDatePicker()
@@ -64,6 +68,13 @@ class CreateEventViewController: UIViewController {
         
         self.pickerView.toolbarDelegate = self
         
+        
+        descriptionTextView.layer.borderWidth = 0.1
+        descriptionTextView.layer.cornerRadius = 8
+
+        
+        self.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard)))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard)))
       
         firebase = EventDatabase(database: EventServiceFirebase.shared)
         
@@ -74,6 +85,10 @@ class CreateEventViewController: UIViewController {
        
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyboard () {
+        self.view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -137,7 +152,7 @@ class CreateEventViewController: UIViewController {
         let name = nameTextField.text ?? "N/I"
         let date = dataTextField.text ?? "N/I"
         let hour = hourTextField.text ?? "N/I"
-        let description = descriptionTextField.text ?? "N/I"
+        let description = descriptionTextView.text ?? "N/I"
         let price = priceTextField.text ?? "0.0"
         
     
@@ -181,3 +196,28 @@ extension CreateEventViewController: UITextFieldDelegate{
     }
 }
 
+
+extension CreateEventViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        descriptionTextView.text = ""
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if descriptionTextView.text == "" {
+            descriptionTextView.text = "Descreva seu evento aqui :)"
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        self.view.endEditing(true)
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
+}
