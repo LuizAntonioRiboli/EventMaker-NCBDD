@@ -209,6 +209,7 @@
                     <tabBarItem key="tabBarItem" title="Criar" image="ic_criar_evento" id="tsx-So-XCL"/>
                     <size key="freeformSize" width="414" height="950"/>
                     <connections>
+                        <outlet property="createEvent" destination="6PZ-5q-drX" id="vax-YN-PoH"/>
                         <outlet property="creatorsNameTextField" destination="hdH-ko-DT0" id="dOg-Xw-ClP"/>
                         <outlet property="dataTextField" destination="MrT-dU-bF7" id="NgH-sv-FkR"/>
                         <outlet property="descriptionTextField" destination="Krv-ad-LhI" id="kuw-jJ-8hn"/>
