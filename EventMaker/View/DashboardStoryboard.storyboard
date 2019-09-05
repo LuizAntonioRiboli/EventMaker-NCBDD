@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S7w-hQ-6PY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5aS-oA-Vb2">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -101,29 +101,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-Sy-bUn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Ys9-iA-fKd"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Nome do App" id="fjF-zL-6rN"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bzN-Hl-GE9" secondAttribute="bottom" id="3ca-jq-icv"/>
-                            <constraint firstItem="jgs-Sy-bUn" firstAttribute="trailing" secondItem="D6B-Ys-4MX" secondAttribute="trailing" id="E1I-Rp-GA9"/>
                             <constraint firstItem="bzN-Hl-GE9" firstAttribute="leading" secondItem="D6B-Ys-4MX" secondAttribute="leading" id="W7o-40-31E"/>
-                            <constraint firstItem="jgs-Sy-bUn" firstAttribute="leading" secondItem="D6B-Ys-4MX" secondAttribute="leading" id="X1V-0D-Lui"/>
                             <constraint firstItem="bzN-Hl-GE9" firstAttribute="trailing" secondItem="D6B-Ys-4MX" secondAttribute="trailing" id="Zqq-DJ-9Nd"/>
-                            <constraint firstItem="bzN-Hl-GE9" firstAttribute="top" secondItem="jgs-Sy-bUn" secondAttribute="bottom" id="bVx-Ot-Rld"/>
-                            <constraint firstItem="jgs-Sy-bUn" firstAttribute="top" secondItem="D6B-Ys-4MX" secondAttribute="top" id="qUt-Xn-F6X"/>
+                            <constraint firstItem="bzN-Hl-GE9" firstAttribute="top" secondItem="D6B-Ys-4MX" secondAttribute="top" id="h5S-3w-kmb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D6B-Ys-4MX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Eventos" image="ic_evento_over" id="kTc-wX-PDd"/>
                     <navigationItem key="navigationItem" title="Nome do App" id="oRc-L4-Wz1"/>
                     <connections>
                         <outlet property="dashboaardTableView" destination="bzN-Hl-GE9" id="3PV-83-bIF"/>
@@ -131,7 +118,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5g-bT-oy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="-76"/>
+            <point key="canvasLocation" x="1744.9275362318842" y="-76.339285714285708"/>
+        </scene>
+        <!--Eventos-->
+        <scene sceneID="lNQ-lB-Egy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5aS-oA-Vb2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Eventos" image="ic_evento_over" id="kTc-wX-PDd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l0h-7D-fvW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S7w-hQ-6PY" kind="relationship" relationship="rootViewController" id="jdy-sH-86E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RS4-do-Uqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.78260869565224" y="-76.339285714285708"/>
         </scene>
     </scenes>
     <resources>

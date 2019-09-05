@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DUi-xK-dGu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OOA-Xd-dIk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Criar-->
+        <!--Criar evento-->
         <scene sceneID="mxb-Bu-Mgl">
             <objects>
                 <viewController id="DUi-xK-dGu" customClass="CreateEventViewController" customModule="EventMaker" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,19 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-qX-zcJ">
-                                <rect key="frame" x="0.0" y="52" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Criar" id="pg2-S0-mM0"/>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-GP-gL5">
-                                <rect key="frame" x="0.0" y="96" width="414" height="854"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="810"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEl-tQ-kfJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="920"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-xb-LMa">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_cam" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-xb-LMa">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -196,17 +190,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QfX-GP-gL5" firstAttribute="trailing" secondItem="4Lk-qX-zcJ" secondAttribute="trailing" id="Iqw-ZO-6vk"/>
-                            <constraint firstItem="4Lk-qX-zcJ" firstAttribute="top" secondItem="bWn-WH-oqD" secondAttribute="top" constant="8" id="MTo-1b-4ho"/>
                             <constraint firstAttribute="trailing" secondItem="QfX-GP-gL5" secondAttribute="trailing" id="PcJ-Ph-orq"/>
                             <constraint firstItem="QfX-GP-gL5" firstAttribute="leading" secondItem="M8m-wn-GKI" secondAttribute="leading" id="STR-ap-pix"/>
                             <constraint firstAttribute="bottom" secondItem="QfX-GP-gL5" secondAttribute="bottom" id="UrY-DO-53U"/>
-                            <constraint firstItem="QfX-GP-gL5" firstAttribute="leading" secondItem="4Lk-qX-zcJ" secondAttribute="leading" id="ZDw-fy-xFi"/>
-                            <constraint firstItem="QfX-GP-gL5" firstAttribute="top" secondItem="4Lk-qX-zcJ" secondAttribute="bottom" id="ab3-Y2-1nw"/>
+                            <constraint firstItem="QfX-GP-gL5" firstAttribute="top" secondItem="bWn-WH-oqD" secondAttribute="top" constant="52" id="pLG-Cp-viD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bWn-WH-oqD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Criar" image="ic_criar_evento" id="tsx-So-XCL"/>
+                    <navigationItem key="navigationItem" title="Criar evento" id="10G-Og-rGZ"/>
                     <size key="freeformSize" width="414" height="950"/>
                     <connections>
                         <outlet property="creatorsNameTextField" destination="hdH-ko-DT0" id="dOg-Xw-ClP"/>
@@ -217,14 +208,43 @@
                         <outlet property="localAdressTextField" destination="Fpp-tL-47C" id="6dE-B8-nxm"/>
                         <outlet property="nameTextField" destination="XfF-c7-Fbg" id="2Od-Z0-TOF"/>
                         <outlet property="priceTextField" destination="i94-KE-D8Q" id="Mb0-8o-uaj"/>
+                        <segue destination="Hdl-bD-JUD" kind="show" identifier="presentPostEventSegue" id="9Gb-CD-wRT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rum-ov-7jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2086.9565217391305" y="-360.26785714285711"/>
+        </scene>
+        <!--PostEventCreationStoryboard-->
+        <scene sceneID="B8D-Hm-hI9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PostEventCreationStoryboard" id="Hdl-bD-JUD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3f-Zr-LUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926.811594202899" y="-514.28571428571422"/>
+        </scene>
+        <!--Criar-->
+        <scene sceneID="fYa-3m-vks">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OOA-Xd-dIk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Criar" image="ic_criar_evento" id="tsx-So-XCL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cuk-cK-CEe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DUi-xK-dGu" kind="relationship" relationship="rootViewController" id="QVY-3w-fBC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypq-Ng-OCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1176.8115942028987" y="-360.26785714285711"/>
         </scene>
     </scenes>
     <resources>
         <image name="ic_criar_evento" width="22" height="22"/>
+        <image name="img_cam" width="415" height="180"/>
     </resources>
 </document>
