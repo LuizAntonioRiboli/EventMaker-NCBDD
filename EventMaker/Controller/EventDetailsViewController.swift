@@ -46,7 +46,7 @@ class EventDetailsViewController: UIViewController {
     }
     
     func animateEventParticipation () {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
             UIView.animate(withDuration: 1, animations: {
                 self.confirmationHeightLayout.constant = 0
                 self.view.layoutIfNeeded()

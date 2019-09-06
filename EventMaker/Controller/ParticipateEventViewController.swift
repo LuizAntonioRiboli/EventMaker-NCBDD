@@ -80,7 +80,7 @@ class ParticipateEventViewController: UIViewController {
             let signInStoryboard = UIStoryboard(name: "fake3", bundle: nil)
             let signInVC = signInStoryboard.instantiateViewController(withIdentifier: "AskForName") as! AskForNameViewController
             self.present(signInVC, animated: true, completion: nil)
-            self.tabBarController?.performSegue(withIdentifier: "AskForName", sender: self)
+//            self.tabBarController?.performSegue(withIdentifier: "AskForName", sender: self)
         }
         self.correspondentEvent.isHidden = false
         UIView.animate(withDuration: 1, animations: {
