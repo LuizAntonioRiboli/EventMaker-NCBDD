@@ -112,7 +112,7 @@ class EventMakerSpec: QuickSpec {
                 
                 it("entao o evento deve estar na base de dados.") {
                     
-                    try! events.database.addEvent(event: event) { (id) in
+                    events.database.addEvent(event: event) { (id) in
                         events.database.getAllEvent { (array) in
                             expect(array).to(contain(event))
                         }

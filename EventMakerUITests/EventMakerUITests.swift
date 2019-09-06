@@ -12,23 +12,5 @@ import Quick
 import Nimble
 
 class UIEventMakerSpec: QuickSpec {
-    override func spec() {
-        
-        let app = XCUIApplication()
-        
-        describe("TESTE") {
-            context("TESTE") {
-                
-                app.buttons["CRIAR EVENTO"].tap()
-                
-                it("TESTE", closure: {
-                    
-                    expect(app.buttons.count).to(equal(2))
-                    
-                })
-            }
-        }
-        
-        
-    }
+      
 }
