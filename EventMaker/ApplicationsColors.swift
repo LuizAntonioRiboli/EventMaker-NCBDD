@@ -18,5 +18,8 @@ class ApplicationsColors {
     static let Gray02 = UIColor(named: "Gray 2")
     static let VividBlueDisabled = UIColor(named: "Vivid Blue Disabled")
     static let VividBlue = UIColor(named: "Vivid Blue")
+    static let green = UIColor(named: "Green")
+    static let red = UIColor(named: "Red")
+    static let yellow = UIColor(named: "Yellow")
     
 }

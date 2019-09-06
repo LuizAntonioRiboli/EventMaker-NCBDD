@@ -25,7 +25,6 @@ class DashboardViewController: UIViewController {
         
         firebase = EventDatabase(database: EventServiceFirebase.shared)
         
-        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_evento_over")
         
         firebase?.database.getAllEvent(completion: { [weak self] events in
             self?.myEvents = events

@@ -30,7 +30,6 @@ class ParticipateEventViewController: UIViewController {
         @IBOutlet weak var correspondentEventHeightConstraint: NSLayoutConstraint!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
     }
     
     override func viewDidLoad() {
@@ -62,6 +61,8 @@ class ParticipateEventViewController: UIViewController {
         // Mark: Remove container view
         self.correspondentEvent.isHidden = true
         self.correspondentEventHeightConstraint.constant = 0
+        // Mark: Tab bar icon
+//        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_participar")
     }
     
     func handleButtonActivation (activeButton: Bool) {
@@ -79,7 +80,7 @@ class ParticipateEventViewController: UIViewController {
             let signInStoryboard = UIStoryboard(name: "fake3", bundle: nil)
             let signInVC = signInStoryboard.instantiateViewController(withIdentifier: "AskForName") as! AskForNameViewController
             self.present(signInVC, animated: true, completion: nil)
-            
+            self.tabBarController?.performSegue(withIdentifier: "AskForName", sender: self)
         }
         self.correspondentEvent.isHidden = false
         UIView.animate(withDuration: 1, animations: {
@@ -99,6 +100,11 @@ extension ParticipateEventViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         handleButtonActivation(activeButton: textField.text != "" )
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        dismissKeyboard()
+        return true
     }
     
 }
