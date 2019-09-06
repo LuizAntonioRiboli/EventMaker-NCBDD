@@ -201,6 +201,7 @@
                     <navigationItem key="navigationItem" title="Criar evento" id="10G-Og-rGZ"/>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
+                        <outlet property="createEvent" destination="6PZ-5q-drX" id="vax-YN-PoH"/>
                         <outlet property="creatorsNameTextField" destination="hdH-ko-DT0" id="dOg-Xw-ClP"/>
                         <outlet property="dataTextField" destination="MrT-dU-bF7" id="NgH-sv-FkR"/>
                         <outlet property="descriptionTextView" destination="Krv-ad-LhI" id="kuw-jJ-8hn"/>

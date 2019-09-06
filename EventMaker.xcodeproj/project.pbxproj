@@ -21,7 +21,7 @@
 		3A334D53231ED5BA00DAC1FE /* fake3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A334D52231ED5BA00DAC1FE /* fake3.storyboard */; };
 		3A334D5D231EFF2700DAC1FE /* EventMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */; };
 		3A334D6B231EFF3100DAC1FE /* EventMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */; };
-		3A334D73232021D500DAC1FE /* EventMakeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D72232021D500DAC1FE /* EventMakeSpec.swift */; };
+		3A334D73232021D500DAC1FE /* EventMakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D72232021D500DAC1FE /* EventMakerSpec.swift */; };
 		3A334D752320298400DAC1FE /* EventDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D742320298400DAC1FE /* EventDatabase.swift */; };
 		3A334D772320326100DAC1FE /* EventServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A334D762320326100DAC1FE /* EventServiceTest.swift */; };
 		3A5AC945231D8FAD00CBE6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC944231D8FAD00CBE6EB /* AppDelegate.swift */; };
@@ -33,6 +33,7 @@
 		BF292330231EFE0200AA9C94 /* PostEventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */; };
 		BF2B867F231EEDC8006A8ED7 /* PostEventCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */; };
 		BF2B8681231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */; };
+		EE5FE0DC1D44AD949EFEFBE7 /* Pods_EventMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F87301397B3933EC6CB0FD /* Pods_EventMakerUITests.framework */; };
 		BF810A312321A34900A74AFD /* SenderStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF810A302321A34900A74AFD /* SenderStructure.swift */; };
 		F111FD1C231D9C610021AB20 /* EventServiceFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD1B231D9C610021AB20 /* EventServiceFirebase.swift */; };
 		F111FD23231D9E6A0021AB20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111FD22231D9E6A0021AB20 /* Event.swift */; };
@@ -79,7 +80,7 @@
 		3A334D68231EFF3100DAC1FE /* EventMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakerTests.swift; sourceTree = "<group>"; };
 		3A334D6C231EFF3100DAC1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A334D72232021D500DAC1FE /* EventMakeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakeSpec.swift; sourceTree = "<group>"; };
+		3A334D72232021D500DAC1FE /* EventMakerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMakerSpec.swift; sourceTree = "<group>"; };
 		3A334D742320298400DAC1FE /* EventDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDatabase.swift; sourceTree = "<group>"; };
 		3A334D762320326100DAC1FE /* EventServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceTest.swift; sourceTree = "<group>"; };
 		3A5AC941231D8FAD00CBE6EB /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,12 +90,15 @@
 		3A5AC94E231D8FAD00CBE6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5AC951231D8FAD00CBE6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4729243CA1F3ACA2BE2690AC /* Pods-EventMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-EventMakerTests/Pods-EventMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		599EDEE89B1BB859BE540A5E /* Pods-EventMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMakerUITests.release.xcconfig"; path = "Target Support Files/Pods-EventMakerUITests/Pods-EventMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F87301397B3933EC6CB0FD /* Pods_EventMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
 		BBF1AF02CBDB03C3339A6E48 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
 		BF29232F231EFE0200AA9C94 /* PostEventCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEventCreationViewController.swift; sourceTree = "<group>"; };
 		BF2B867C231EEDC7006A8ED7 /* PostEventCreationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PostEventCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		BF2B867E231EEDC8006A8ED7 /* CreateEventStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateEventStoryboard.storyboard; sourceTree = "<group>"; };
+		DD79ACD1872A17596E4CF47F /* Pods-EventMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-EventMakerUITests/Pods-EventMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF810A302321A34900A74AFD /* SenderStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderStructure.swift; sourceTree = "<group>"; };
 		E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F111FD1B231D9C610021AB20 /* EventServiceFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceFirebase.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5FE0DC1D44AD949EFEFBE7 /* Pods_EventMakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +157,8 @@
 		3A334D5B231EFF2700DAC1FE /* EventMakerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */,
 				3A334D5E231EFF2700DAC1FE /* Info.plist */,
+				3A334D5C231EFF2700DAC1FE /* EventMakerUITests.swift */,
 			);
 			path = EventMakerUITests;
 			sourceTree = "<group>";
@@ -161,9 +166,9 @@
 		3A334D69231EFF3100DAC1FE /* EventMakerTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */,
 				3A334D6C231EFF3100DAC1FE /* Info.plist */,
-				3A334D72232021D500DAC1FE /* EventMakeSpec.swift */,
+				3A334D72232021D500DAC1FE /* EventMakerSpec.swift */,
+				3A334D6A231EFF3100DAC1FE /* EventMakerTests.swift */,
 				3A334D762320326100DAC1FE /* EventServiceTest.swift */,
 			);
 			path = EventMakerTests;
@@ -212,6 +217,7 @@
 			children = (
 				E454C227F349E18A2301FA68 /* Pods_EventMaker.framework */,
 				5A646BEEE68AA5305E6C56C1 /* Pods_EventMakerTests.framework */,
+				94F87301397B3933EC6CB0FD /* Pods_EventMakerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,6 +229,8 @@
 				9698DA2216E7D3EBA5DD2D8F /* Pods-EventMaker.release.xcconfig */,
 				4729243CA1F3ACA2BE2690AC /* Pods-EventMakerTests.debug.xcconfig */,
 				08AAAC0338539EBA32B0A502 /* Pods-EventMakerTests.release.xcconfig */,
+				DD79ACD1872A17596E4CF47F /* Pods-EventMakerUITests.debug.xcconfig */,
+				599EDEE89B1BB859BE540A5E /* Pods-EventMakerUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -290,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A334D63231EFF2700DAC1FE /* Build configuration list for PBXNativeTarget "EventMakerUITests" */;
 			buildPhases = (
+				201D119EC5EE96B1D622BC7E /* [CP] Check Pods Manifest.lock */,
 				3A334D56231EFF2700DAC1FE /* Sources */,
 				3A334D57231EFF2700DAC1FE /* Frameworks */,
 				3A334D58231EFF2700DAC1FE /* Resources */,
+				D02719F9D4E0B37B6DE2CB45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +448,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMaker/Pods-EventMaker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		201D119EC5EE96B1D622BC7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventMakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4E9C00AAF70E87BE1EE0D891 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +507,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D02719F9D4E0B37B6DE2CB45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMakerUITests/Pods-EventMakerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMakerUITests/Pods-EventMakerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMakerUITests/Pods-EventMakerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E753B439856D09D4D91A82D7 /* [CP] Check Pods Manifest.lock */ = {
@@ -515,7 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A334D6B231EFF3100DAC1FE /* EventMakerTests.swift in Sources */,
-				3A334D73232021D500DAC1FE /* EventMakeSpec.swift in Sources */,
+				3A334D73232021D500DAC1FE /* EventMakerSpec.swift in Sources */,
 				3A334D772320326100DAC1FE /* EventServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,9 +623,10 @@
 /* Begin XCBuildConfiguration section */
 		3A334D61231EFF2700DAC1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD79ACD1872A17596E4CF47F /* Pods-EventMakerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F229TZ6SP5;
+				DEVELOPMENT_TEAM = 94578VT8X2;
 				INFOPLIST_FILE = EventMakerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -594,9 +644,10 @@
 		};
 		3A334D62231EFF2700DAC1FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599EDEE89B1BB859BE540A5E /* Pods-EventMakerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F229TZ6SP5;
+				DEVELOPMENT_TEAM = 94578VT8X2;
 				INFOPLIST_FILE = EventMakerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -618,7 +669,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F229TZ6SP5;
+				DEVELOPMENT_TEAM = 94578VT8X2;
 				INFOPLIST_FILE = EventMakerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -640,7 +691,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F229TZ6SP5;
+				DEVELOPMENT_TEAM = 94578VT8X2;
 				INFOPLIST_FILE = EventMakerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -778,6 +829,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
 				DEVELOPMENT_TEAM = A4YYTD745K;
 				INFOPLIST_FILE = EventMaker/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12;
@@ -799,6 +851,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4YYTD745K;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = EventMaker/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -2,27 +2,41 @@
 platform :ios, '12.4'
 
 target 'EventMaker' do
-  use_frameworks!
-  inhibit_all_warnings!
+    use_frameworks!
+    inhibit_all_warnings!
 
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Storage'
-  pod 'Firebase/Firestore'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
 end
 
 target 'EventMakerTests' do
-  use_frameworks!
-  inhibit_all_warnings!
+    use_frameworks!
+    inhibit_all_warnings!
 
-  pod 'Nimble'
-  pod 'Quick'
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Storage'
-  pod 'Firebase/Firestore'
+    pod 'Nimble'
+    pod 'Quick'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
+end
+
+target 'EventMakerUITests' do
+    use_frameworks!
+    inhibit_all_warnings!
+
+    pod 'Nimble'
+    pod 'Quick'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
 end

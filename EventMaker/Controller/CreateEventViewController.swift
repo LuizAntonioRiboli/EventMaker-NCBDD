@@ -9,6 +9,7 @@
 import UIKit
 
 class CreateEventViewController: UIViewController {
+    @IBOutlet weak var createEvent: UIButton!
     
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -22,11 +23,15 @@ class CreateEventViewController: UIViewController {
     
     
     @IBOutlet weak var hourTextField: UITextField!
+    
     @IBAction func choosePhoto(_ sender: UIButton) {
     }
     
     @IBAction func createEventButton(_ sender: UIButton) {
-        saveEvent()
+        
+        saveEvent(completion: { event in
+            
+        })
     }
     @IBOutlet weak var dataTextField: UITextField!
     
@@ -36,7 +41,7 @@ class CreateEventViewController: UIViewController {
     }
     
     fileprivate let pickerView = ToolbarPickerView()
-    private var firebase: EventDatabase?
+    public var firebase: EventDatabase?
     var currentTappedTextField : UITextField?
     
     
@@ -148,7 +153,7 @@ class CreateEventViewController: UIViewController {
         
     }
     
-    func saveEvent(){
+    func saveEvent(completion: @escaping (Event) -> Void) {
         
         let adress = localAdressTextField.text ?? "N/I"
         let creator = creatorsNameTextField.text ?? "N/I"
@@ -175,6 +180,7 @@ class CreateEventViewController: UIViewController {
             let senderStructure = SenderStructure(eventID: eventID, event: event)
             self?.performSegue(withIdentifier: "presentPostEventSegue", sender: senderStructure )
 
+            completion(event)
         })
         
     }
