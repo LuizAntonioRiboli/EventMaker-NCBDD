@@ -58,7 +58,7 @@ class CreateEventViewController: UIViewController {
         firebase = EventDatabase(database: EventServiceFirebase.shared)
         
         
-        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_criar_evento")
+//        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_criar_evento-1")
        
 
         // Do any additional setup after loading the view.

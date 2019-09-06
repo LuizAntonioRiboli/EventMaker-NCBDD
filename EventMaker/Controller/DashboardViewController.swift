@@ -21,7 +21,7 @@ class DashboardViewController: UIViewController {
         dashboaardTableView.delegate = self
         dashboaardTableView.dataSource = self
         
-        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_evento_over")
+//        tabBarController?.tabBar.items?.last?.image = #imageLiteral(resourceName: "ic_evento")
     }
 
 }
